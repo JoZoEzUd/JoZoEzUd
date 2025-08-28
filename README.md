@@ -38,7 +38,7 @@
 ## ⚡ Terminal Hacker Simulado
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JoZoEzUd/assets/main/terminal-hack.gif" alt="Terminal Hacker" width="600"/>
+  <img src="https://raw.githubusercontent.com/JoZoEzUd/JoZoEzUd/main/assets/terminal-hack.gif" alt="Terminal Hacker" width="600"/>
 </p>
 
 ---
