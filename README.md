@@ -37,7 +37,7 @@
 
 ## ⚡ Terminal Hacker Simulado
 
-![Terminal Hacker](https://raw.githubusercontent.com/JoZoEzUd/JoZoEzUd/main/assets/terminal-hack.gif)
+![Terminal Hacker](https://raw.githubusercontent.com/JoZoEzUd/JoZoEzUd/main/terminal-hack.gif)
 
 ---
 
