@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Terminal Hacker - JoZoEzUd</title>
+  <title>Hacked by JoZoEzUd</title>
   <style>
     body {
       background-color: #000;
@@ -11,22 +11,78 @@
       text-align: center;
       padding: 40px;
     }
-    .scanner {
-      animation: pulse 1s infinite;
+    h1 {
+      animation: blink 1s infinite;
     }
-    @keyframes pulse {
-      0% { opacity: 0.2; }
-      50% { opacity: 1; }
-      100% { opacity: 0.2; }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+    button {
+      background: #39ff14;
+      color: #000;
+      font-family: monospace;
+      padding: 10px 20px;
+      border: none;
+      margin: 10px;
+      cursor: pointer;
+    }
+    #terminal {
+      white-space: pre-wrap;
+      text-align: left;
+      margin: 30px auto;
+      max-width: 600px;
+      border: 1px solid #39ff14;
+      padding: 20px;
+      background-color: #111;
     }
   </style>
 </head>
 <body>
-  <h1>👾 Terminal Hacker Ativo</h1>
-  <p class="scanner">🔍 SCANNING NETWORK...</p>
-  <img src="assets/terminal-hack.gif" width="600" alt="Terminal Hacker"/>
+
+  <h1>💀 HACKED BY JOZOEZUD</h1>
+
+  <!-- GIF centralizado -->
+  <img src="assets/hacked.gif" alt="Hacked Terminal" width="600"/>
+
+  <!-- SVG animado -->
+  <svg width="100%" height="60">
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="24" fill="#39ff14">
+      🔍 SCANNING NETWORK...
+    </text>
+    <animateTransform attributeName="transform" type="translate" from="-10 0" to="10 0" dur="0.5s" repeatCount="indefinite"/>
+  </svg>
+
+  <!-- Botões interativos -->
+  <a href="https://github.com/JoZoEzUd/pentest-toolkit" target="_blank">
+    <button>🛠️ Pentest Toolkit</button>
+  </a>
+  <a href="https://github.com/JoZoEzUd/autorecon" target="_blank">
+    <button>🐍 AutoRecon</button>
+  </a>
+
+  <!-- Efeito sonoro -->
+  <audio id="hackSound" src="assets/hack.mp3"></audio>
+  <button onclick="document.getElementById('hackSound').play()">🔊 Ativar Som Hacker</button>
+
+  <!-- Terminal digitando sozinho -->
+  <div id="terminal"></div>
+  <script>
+    const text = "root@jozoezud:~$ nmap -sV 192.168.0.1\nStarting Nmap scan...\nOpen ports found: 22, 80, 443\nExploit ready.";
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        document.getElementById("terminal").innerText += text[i];
+        i++;
+        setTimeout(type, 50);
+      }
+    }
+    type();
+  </script>
+
+  <!-- Contato -->
   <p>📧 Email: joaoszti@gmail.com</p>
   <p>💬 Discord: joaoszti</p>
+
 </body>
 </html>
-
