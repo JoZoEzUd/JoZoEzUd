@@ -61,7 +61,9 @@
 ---
 
 ## 🌍 Contato
-•🔗LinkedIn
+•🔗LinkedIn:
+
+•💻Discord:
 
 •📧seuemail@email.com
 
