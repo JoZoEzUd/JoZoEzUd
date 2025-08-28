@@ -3,23 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JoZoEzUd — Portfólio Hacker</title>
+  <title>JoZoEzUd — Cibersegurança & Pentest</title>
   <style>
     body {
       background-color: #000;
       color: #39ff14;
       font-family: monospace;
-      text-align: center;
-      padding: 20px;
       margin: 0;
+      padding: 20px;
+      text-align: center;
     }
-    h1 {
+    h1, h2 {
       animation: blink 1s infinite;
-      margin-bottom: 20px;
     }
     @keyframes blink {
       0%, 100% { opacity: 1; }
       50% { opacity: 0.2; }
+    }
+    .section {
+      margin: 40px 0;
     }
     button {
       background: #39ff14;
@@ -46,18 +48,17 @@
     img {
       max-width: 100%;
       height: auto;
-      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
 
-  <h1>💀 HACKED BY JOZOEZUD</h1>
+  <h1>🛡️ JoZoEzUd — Cibersegurança & Pentest</h1>
 
-  <!-- GIF centralizado -->
-  <img src="assets/hacked.gif" alt="Hacked Terminal">
+  <!-- GIF Hacker -->
+  <img src="https://media.giphy.com/media/wwg1suUiTbCY8H8vIA/giphy.gif" alt="Matrix Hacker">
 
-  <!-- SVG animado -->
+  <!-- Scanner SVG -->
   <svg width="100%" height="60">
     <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="24" fill="#39ff14">
       🔍 SCANNING NETWORK...
@@ -65,39 +66,50 @@
     <animateTransform attributeName="transform" type="translate" from="-10 0" to="10 0" dur="0.5s" repeatCount="indefinite"/>
   </svg>
 
-  <!-- Botões interativos -->
-  <a href="https://github.com/JoZoEzUd/pentest-toolkit" target="_blank">
-    <button>🛠️ Pentest Toolkit</button>
-  </a>
-  <a href="https://github.com/JoZoEzUd/autorecon" target="_blank">
-    <button>🐍 AutoRecon</button>
-  </a>
-  <a href="https://github.com/JoZoEzUd" target="_blank">
-    <button>👤 Meu Perfil GitHub</button>
-  </a>
+  <!-- Sobre mim -->
+  <div class="section">
+    <h2>👨‍💻 Sobre mim</h2>
+    <p>Estudante de Ciência da Computação com foco em Cibersegurança, Pentest e Automação.</p>
+    <p>Experiência com Linux, Python, Bash, SQL e análise de vulnerabilidades.</p>
+  </div>
 
-  <!-- Som automático com botão de desligar -->
-  <audio id="hackSound" src="https://www.myinstants.com/media/sounds/hacking.mp3" autoplay loop style="display:none"></audio>
+  <!-- Projetos -->
+  <div class="section">
+    <h2>📂 Projetos</h2>
+    <a href="https://github.com/JoZoEzUd/pentest-toolkit" target="_blank"><button>🛠️ Pentest Toolkit</button></a>
+    <a href="https://github.com/JoZoEzUd/autorecon" target="_blank"><button>🐍 AutoRecon</button></a>
+    <a href="https://github.com/JoZoEzUd" target="_blank"><button>👤 Meu Perfil GitHub</button></a>
+  </div>
+
+  <!-- Terminal Simulado -->
+  <div class="section">
+    <h2>💻 Terminal Simulado</h2>
+    <div id="terminal"></div>
+    <script>
+      const text = "root@jozoezud:~$ nmap -sV 192.168.0.1\nStarting Nmap scan...\nOpen ports found: 22, 80, 443\nExploit ready.";
+      let i = 0;
+      function type() {
+        if (i < text.length) {
+          document.getElementById("terminal").innerText += text[i];
+          i++;
+          setTimeout(type, 50);
+        }
+      }
+      window.onload = type;
+    </script>
+  </div>
+
+  <!-- Som Hacker -->
+  <audio id="hackSound" src="https://www.myinstants.com/media/sounds/hacking.mp3" autoplay loop muted style="display:none"></audio>
+  <button onclick="document.getElementById('hackSound').muted = false">🔊 Ativar Som Hacker</button>
   <button onclick="document.getElementById('hackSound').pause()">🔇 Desligar Som</button>
 
-  <!-- Terminal digitando sozinho -->
-  <div id="terminal"></div>
-  <script>
-    const text = "root@jozoezud:~$ nmap -sV 192.168.0.1\nStarting Nmap scan...\nOpen ports found: 22, 80, 443\nExploit ready.";
-    let i = 0;
-    function type() {
-      if (i < text.length) {
-        document.getElementById("terminal").innerText += text[i];
-        i++;
-        setTimeout(type, 50);
-      }
-    }
-    window.onload = type;
-  </script>
-
   <!-- Contato -->
-  <p>📧 Email: joaoszti@gmail.com</p>
-  <p>💬 Discord: joaoszti</p>
+  <div class="section">
+    <h2>📡 Contato</h2>
+    <p>📧 Email: joaoszti@gmail.com</p>
+    <p>💬 Discord: joaoszti</p>
+  </div>
 
 </body>
 </html>
