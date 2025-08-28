@@ -38,8 +38,6 @@
 
 ## 🧰 Skills & Ferramentas
 
-## 🧰 Skills & Ferramentas
-
 <p align="center">
   <img src="https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=white"/>
   <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=yellow"/>
