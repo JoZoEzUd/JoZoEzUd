@@ -1,18 +1,25 @@
-<!-- Banner ASCII -->
+<!-- Banner ASCII com efeito neon -->
 <p align="center">
 <pre>
+<span style="color:#39ff14;">
 ██╗  ██╗ █████╗  ██████╗██╗  ██╗███████╗██████╗  
 ██║ ██╔╝██╔══██╗██╔════╝██║ ██╔╝██╔════╝██╔══██╗
 █████╔╝ ███████║██║     █████╔╝ █████╗  ██║  ██║
 ██╔═██╗ ██╔══██║██║     ██╔═██╗ ██╔══╝  ██║  ██║
 ██║  ██╗██║  ██║╚██████╗██║  ██╗███████╗██████╔╝
 ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═════╝
+</span>
 </pre>
 </p>
 
+<!-- Matrix Rain GIF -->
 <p align="center">
   <img src="https://i.gifer.com/7c9a.gif" alt="Matrix Rain" width="400"/>
 </p>
+
+---
+
+![Visitors](https://komarev.com/ghpvc/?username=JoZoEzUd&label=Visitors&color=39ff14&style=flat-square)
 
 ---
 
@@ -27,17 +34,25 @@
 
 ## 🛠️ Skills & Tools
 
-![Linux](https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=white)
-![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=yellow)
-![Bash](https://img.shields.io/badge/Bash-121011?style=for-the-badge&logo=gnu-bash&logoColor=green)
-![Networking](https://img.shields.io/badge/Networking-0a0a0a?style=for-the-badge&logo=cisco&logoColor=00ff00)
-![CyberSec](https://img.shields.io/badge/CyberSec-111111?style=for-the-badge&logo=protonvpn&logoColor=00ff00)
+<p align="center">
+  <img src="https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=yellow"/>
+  <img src="https://img.shields.io/badge/Bash-black?style=for-the-badge&logo=gnubash&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Networking-0a0a0a?style=for-the-badge&logo=cisco&logoColor=00ff00"/>
+  <img src="https://img.shields.io/badge/CyberSec-111111?style=for-the-badge&logo=protonvpn&logoColor=00ff00"/>
+</p>
+
+---
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=JoZoEzUd&show_icons=true&theme=radical)
 
 ---
 
 ## ⚡ Terminal Hacker Simulado
 
-![Terminal Hacker](https://raw.githubusercontent.com/JoZoEzUd/JoZoEzUd/main/terminal-hack.gif)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/JoZoEzUd/JoZoEzUd/main/terminal-hack.gif" alt="Terminal Hacker" width="600"/>
+</p>
 
 ---
 
