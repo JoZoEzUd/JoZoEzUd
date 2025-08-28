@@ -60,6 +60,13 @@
 
 ---
 
+## 🌍 Contato
+•🔗LinkedIn
+
+•📧seuemail@email.com
+
+---
+
 ## 📊 Status do Sistema
 
 ```bash
