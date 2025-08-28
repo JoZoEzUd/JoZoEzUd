@@ -64,11 +64,11 @@
 ---
 
 ## 🌍 Contato
-•🔗LinkedIn:
+•🔗LinkedIn: Joao Batista
 
-•💻Discord:
+•💻Discord: ezud12
 
-•📧seuemail@email.com
+•📧Outlook: Joao_Jozo@outlook.com
 
 ---
 
