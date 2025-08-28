@@ -40,7 +40,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/JoZoEzUd/assets/main/terminal-hack.gif" alt="Terminal Hacker" width="600"/>
 </p>
-
+![Image](https://github.com/user-attachments/assets/f5f258f3-3539-44a9-a6b2-d928febd2eca)
 ---
 
 ## 📊 Status do Sistema
