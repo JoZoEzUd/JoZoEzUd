@@ -26,7 +26,7 @@
 ## 👾 Sobre mim
 
 > 💻 Estudante de **Ciência da Computação**  
-> 🔐 Foco em **Cibersegurança, Pentest e Automação**  
+> 🔐 Foco em **Cibersegurança, Pentest, Automação e analise de vulnerabilidades**  
 > 🐧 Apaixonado por **Linux e hacking ético**  
 > 🚀 Sempre explorando novas tecnologias  
 
