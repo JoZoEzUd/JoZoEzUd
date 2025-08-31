@@ -1,23 +1,3 @@
-<!-- Banner ASCII com efeito neon -->
-<p align="center">
-<pre>
-<span style="color:#39ff14;">
-██╗  ██╗ █████╗  ██████╗██╗  ██╗███████╗██████╗  
-██║ ██╔╝██╔══██╗██╔════╝██║ ██╔╝██╔════╝██╔══██╗
-█████╔╝ ███████║██║     █████╔╝ █████╗  ██║  ██║
-██╔═██╗ ██╔══██║██║     ██╔═██╗ ██╔══╝  ██║  ██║
-██║  ██╗██║  ██║╚██████╗██║  ██╗███████╗██████╔╝
-╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═════╝
-</span>
-</pre>
-</p>
-
-<!-- Matrix Rain GIF -->
-<p align="center">
-  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnU1dW15d3pxazhlMmJ0Y2Y5bXIzeDJkOTQwYjFsdzRlbWs4aG1wMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FcqKy4Kj7XOK0hCW4g/giphy.gif" alt="Coding The Matrix" width="100%"/>
-</p>
-
----
 
 ![Visitors](https://komarev.com/ghpvc/?username=JoZoEzUd&label=Visitors&color=39ff14&style=flat-square)
 
@@ -52,14 +32,6 @@
 ---
 ## GitHub Stats
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=JoZoEzUd&show_icons=true&theme=radical)
-
----
-
-## ⚡ Terminal Hacker Simulado
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/JoZoEzUd/JoZoEzUd/main/terminal-hack.gif" alt="Terminal Hacker" width="100%"/>
-</p>
 
 ---
 
