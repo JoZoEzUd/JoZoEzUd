@@ -15,7 +15,6 @@
 ## 🏆 Conquistas
 
 ---
-
 ## 🧰 Skills & Ferramentas
 
 <p align="center">
@@ -26,9 +25,10 @@
   <img src="https://img.shields.io/badge/Nmap-0078D7?style=for-the-badge&logo=nmap&logoColor=white" />
   <img src="https://img.shields.io/badge/Wireshark-0000FF?style=for-the-badge&logo=wireshark&logoColor=white" />
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS3 Logo" width="100"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS3 Logo" width="60" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
 </p>
+
 
 
 
