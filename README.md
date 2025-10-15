@@ -1,14 +1,13 @@
 <h1 align="center">João Batista 🇧🇷</h1>
 <p align="center">
-  💻 Estudante de Ciência da Computação • 🔐 Cibersegurança & FullStack Dev • 🚀 Explorador de tecnologias
+  💻 Estudante de Ciência da Computação • 🔐 Cibersegurança & FullStack Dev 
 </p>
 
 ---
 
 ## 👾 Sobre mim  
 - 💻 Estudante de Ciência da Computação  
-- 🔐 Foco em Cibersegurança / Desenvolvedor FullStack em andamento  
-- 🚀 Explorando novas tecnologias no universo digital  
+- 🔐 Foco em Cibersegurança / Desenvolvedor FullStack 
 
 ---
 
@@ -24,7 +23,7 @@
 ---
 
 ## 🌏 Contato  
-- 🔗 [LinkedIn: João Batista](https://www.linkedin.com/in/joao-batista)  
+- 🔗 [LinkedIn: João Batista](www.linkedin.com/in/joão-batista-2206t)  
 - 💻 Discord: `ezud12`  
 - 📧 Email: `Joao_Jozo@outlook.com`  
 
