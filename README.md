@@ -7,7 +7,7 @@
 
 > 💻 Estudante de **Ciência da Computação**  
 > 🔐 Foco em **Cibersegurança/ Desenvolvedor**
-> **Full Desenvolver em andamento**  
+> **FullStack em andamento**  
 > 🚀 Sempre explorando novas tecnologias  
 
 ---
