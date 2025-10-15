@@ -23,7 +23,7 @@
 ---
 
 ## 🌏 Contato  
-- 🔗 [LinkedIn: João Batista](www.linkedin.com/in/joão-batista-2206t)  
+- 🔗 [LinkedIn: João Batista](www.linkedin.com/in/joão-batista-872207339)  
 - 💻 Discord: `ezud12`  
 - 📧 Email: `Joao_Jozo@outlook.com`  
 
