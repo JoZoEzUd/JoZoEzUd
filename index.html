@@ -10,10 +10,34 @@
       font-family: 'Courier New', monospace;
       text-align: center;
       padding: 20px;
+      @keyframes pulse {
+
+        0% { transform: scale(1); }
+ 
+        50% { transform: scale(1.05); }
+  
+        100% { transform: scale(1); }
+
     }
-    h1 {
-      color: #00ffff;
     }
+     h1 {
+      animation: pulse 2.5s infinite;
+    }
+     a.email-link {
+      background-color: #00ffff;
+      color: #0d0d0d;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      font-family: monospace;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+      }
+
+     a.email-link:hover {
+      background-color: #00cccc;
+    } 
     .section {
       margin: 40px 0;
     }
