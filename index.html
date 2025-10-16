@@ -5,12 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>João Batista | Desenvolvedor FullStack</title>
   <style>
+    :root {
+      --bg-color: #0d0d0d;
+      --text-color: #f0f0f0;
+      --accent-color: #00ffff;
+      --btn-bg: transparent;
+      --btn-hover: #00ffff;
+      --btn-text: #00ffff;
+    }
+
+    body.light {
+      --bg-color: #f0f0f0;
+      --text-color: #0d0d0d;
+      --accent-color: #0077cc;
+      --btn-bg: transparent;
+      --btn-hover: #0077cc;
+      --btn-text: #0077cc;
+    }
+
     body {
       margin: 0;
       font-family: 'Courier New', monospace;
-      background-color: #0d0d0d;
-      color: #f0f0f0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
       line-height: 1.6;
+      transition: background-color 0.3s, color 0.3s;
     }
 
     header {
@@ -20,7 +39,7 @@
     }
 
     header h1 {
-      color: #00ffff;
+      color: var(--accent-color);
       font-size: 2.5em;
       animation: pulse 2.5s infinite;
     }
@@ -31,7 +50,7 @@
     }
 
     nav a {
-      color: #00ffff;
+      color: var(--accent-color);
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
@@ -51,15 +70,15 @@
     section:nth-of-type(4) { animation-delay: 0.9s; }
 
     h2 {
-      color: #00ffff;
+      color: var(--accent-color);
       margin-bottom: 10px;
     }
 
     .btn {
       display: inline-block;
-      background: transparent;
-      border: 1px solid #00ffff;
-      color: #00ffff;
+      background: var(--btn-bg);
+      border: 1px solid var(--accent-color);
+      color: var(--btn-text);
       padding: 10px 20px;
       margin-top: 20px;
       text-decoration: none;
@@ -67,8 +86,8 @@
     }
 
     .btn:hover {
-      background-color: #00ffff;
-      color: #0d0d0d;
+      background-color: var(--btn-hover);
+      color: var(--bg-color);
     }
 
     footer {
@@ -76,6 +95,18 @@
       padding: 30px;
       font-size: 0.9em;
       color: #888;
+    }
+
+    .toggle-mode {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--btn-bg);
+      border: 1px solid var(--accent-color);
+      color: var(--btn-text);
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 0.9em;
     }
 
     @keyframes fadeIn {
@@ -98,6 +129,7 @@
   </style>
 </head>
 <body>
+  <button class="toggle-mode" onclick="toggleMode()">🌗 Alternar Tema</button>
 
   <header>
     <h1>João Batista</h1>
@@ -130,6 +162,7 @@
     <h2>📂 Projetos</h2>
     <p><a href="https://github.com/JoZoEzUd/pentest-toolkit" class="btn" target="_blank">Pentest Toolkit</a></p>
     <p><a href="https://github.com/JoZoEzUd/autorecon" class="btn" target="_blank">AutoRecon</a></p>
+    <p><a href="https://github.com/JoZoEzUd" class="btn" target="_blank">Meu GitHub</a></p>
   </section>
 
   <section id="contato">
@@ -143,5 +176,10 @@
     <p>© João Batista — Desenvolvedor Freelancer</p>
   </footer>
 
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('light');
+    }
+  </script>
 </body>
 </html>
