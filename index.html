@@ -1,45 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>João Batista — Desenvolvedor FullStack</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>João Batista | Desenvolvedor FullStack</title>
   <style>
     body {
-      background-color: #0d0d0d;
-      color: #efefef;
+      margin: 0;
       font-family: 'Courier New', monospace;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
       text-align: center;
-      padding: 20px;
+      padding: 60px 20px 30px;
       animation: fadeIn 1s ease-in;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    h1 {
+    header h1 {
       color: #00ffff;
+      font-size: 2.5em;
       animation: pulse 2.5s infinite;
     }
 
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
+    nav {
+      text-align: center;
+      margin-bottom: 40px;
     }
 
-    .section {
-      margin: 40px 0;
+    nav a {
+      color: #00ffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
       opacity: 0;
       transform: translateY(20px);
       animation: fadeInUp 1s ease forwards;
     }
 
-    .section:nth-of-type(1) { animation-delay: 0.3s; }
-    .section:nth-of-type(2) { animation-delay: 0.6s; }
-    .section:nth-of-type(3) { animation-delay: 0.9s; }
-    .section:nth-of-type(4) { animation-delay: 1.2s; }
+    section:nth-of-type(2) { animation-delay: 0.3s; }
+    section:nth-of-type(3) { animation-delay: 0.6s; }
+    section:nth-of-type(4) { animation-delay: 0.9s; }
+
+    h2 {
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: transparent;
+      border: 1px solid #00ffff;
+      color: #00ffff;
+      padding: 10px 20px;
+      margin-top: 20px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #00ffff;
+      color: #0d0d0d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
     @keyframes fadeInUp {
       to {
@@ -48,71 +90,58 @@
       }
     }
 
-    button {
-      background: transparent;
-      border: 1px solid #00ffff;
-      color: #00ffff;
-      font-family: monospace;
-      padding: 10px 20px;
-      margin: 10px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #00ffff;
-      color: #0d0d0d;
-      transform: scale(1.05);
-    }
-
-    a {
-      color: #00ffff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      line-height: 1.8;
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
     }
   </style>
 </head>
 <body>
-  <h1>🧠 João Batista — Desenvolvedor FullStack | Cibersegurança & Automação</h1>
 
-  <div class="section">
+  <header>
+    <h1>João Batista</h1>
+    <p>Desenvolvedor FullStack | Cibersegurança & Automação</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
     <h2>💻 Sobre mim</h2>
-    <p>Sou estudante de ciência da computação.</p>
-    <p>Desenvolvedor FullStack júnior com foco em Cibersegurança, automação e aplicações web modernas.</p>
-    <p>Experiência com Python, JavaScript, HTML, CSS, C#, React, AWS, Docker, SQL e Linux.</p>
-  </div>
+    <p>Sou desenvolvedor FullStack com foco em aplicações seguras, automação e soluções web modernas. Tenho experiência com Python, C#, React, Docker, AWS e segurança ofensiva.</p>
+  </section>
 
-  <div class="section">
-    <h2>🚀 Stack de Desenvolvimento</h2>
+  <section id="servicos">
+    <h2>🛠️ O que eu faço</h2>
     <ul>
-      <li>🧠 Backend: C#, Python, SQL</li>
-      <li>🎨 Frontend: React, JavaScript, HTML, CSS</li>
-      <li>☁️ Cloud & DevOps: AWS, Docker, Git/GitHub Actions</li>
-      <li>🔐 Segurança: Boas práticas OWASP, autenticação JWT, criptografia</li>
+      <li>Desenvolvimento de APIs seguras</li>
+      <li>Sites responsivos e otimizados</li>
+      <li>Automação de tarefas com Python</li>
+      <li>Auditorias de segurança e pentest</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
+  <section id="projetos">
     <h2>📂 Projetos</h2>
-    <a href="https://github.com/JoZoEzUd/pentest-toolkit" target="_blank"><button>🛠️ Pentest Toolkit</button></a>
-    <a href="https://github.com/JoZoEzUd/autorecon" target="_blank"><button>🐍 AutoRecon</button></a>
-    <a href="https://github.com/JoZoEzUd" target="_blank"><button>👤 Meu Perfil GitHub</button></a>
-  </div>
+    <p><a href="https://github.com/JoZoEzUd/pentest-toolkit" class="btn" target="_blank">Pentest Toolkit</a></p>
+    <p><a href="https://github.com/JoZoEzUd/autorecon" class="btn" target="_blank">AutoRecon</a></p>
+  </section>
 
-  <div class="section">
+  <section id="contato">
     <h2>📡 Contato</h2>
-    <p>📧 <a href="mailto:Joao_Jozo@outlook.com">Joao_Jozo@outlook.com</a></p>
-    <p>💬 Discord: ezud12</p>
-    <p>🔗 <a href="https://www.linkedin.com/in/jo%C3%A3o-batista-2206321t/" target="_blank">LinkedIn: João Batista</a></p>
-  </div>
+    <p>Email: <a href="mailto:Joao_Jozo@outlook.com">Joao_Jozo@outlook.com</a></p>
+    <p>Discord: ezud12</p>
+    <p><a href="https://www.linkedin.com/in/jo%C3%A3o-batista-2206321t/" class="btn" target="_blank">LinkedIn</a></p>
+  </section>
+
+  <footer>
+    <p>© João Batista — Desenvolvedor Freelancer</p>
+  </footer>
+
 </body>
 </html>
