@@ -4,60 +4,76 @@
   <meta charset="UTF-8">
   <title>João Batista — Desenvolvedor FullStack</title>
   <style>
-     @keyframes pulse {
-
-        0% { transform: scale(1); }
- 
-        50% { transform: scale(1.05); }
-  
-        100% { transform: scale(1); }
-
-    }
     body {
       background-color: #0d0d0d;
       color: #efefef;
       font-family: 'Courier New', monospace;
       text-align: center;
       padding: 20px;
+      animation: fadeIn 1s ease-in;
     }
-     h1 {
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      color: #00ffff;
       animation: pulse 2.5s infinite;
     }
-     a.email-link {
-      background-color: #00ffff;
-      color: #0d0d0d;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-      font-family: monospace;
-      margin-top: 10px;
-      transition: background-color 0.3s ease;
-      }
 
-     a.email-link:hover {
-      background-color: #00cccc;
-    } 
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
     .section {
       margin: 40px 0;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
     }
+
+    .section:nth-of-type(1) { animation-delay: 0.3s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.9s; }
+    .section:nth-of-type(4) { animation-delay: 1.2s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     button {
-      background: #5353ec;
-      color: #efefef;
+      background: transparent;
+      border: 1px solid #00ffff;
+      color: #00ffff;
       font-family: monospace;
       padding: 10px 20px;
-      border: none;
       margin: 10px;
       cursor: pointer;
-      transition: transform 0.2s;
+      transition: all 0.3s ease;
     }
+
     button:hover {
+      background-color: #00ffff;
+      color: #0d0d0d;
       transform: scale(1.05);
     }
-    img {
-      max-width: 100%;
-      height: auto;
+
+    a {
+      color: #00ffff;
+      text-decoration: none;
     }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     ul {
       list-style: none;
       padding: 0;
@@ -66,21 +82,17 @@
   </style>
 </head>
 <body>
-
   <h1>🧠 João Batista — Desenvolvedor FullStack | Cibersegurança & Automação</h1>
 
-  <!-- Sobre mim -->
   <div class="section">
     <h2>💻 Sobre mim</h2>
-     <p>Sou estudante de ciencia da computação.</p>
+    <p>Sou estudante de ciência da computação.</p>
     <p>Desenvolvedor FullStack júnior com foco em Cibersegurança, automação e aplicações web modernas.</p>
     <p>Experiência com Python, JavaScript, HTML, CSS, C#, React, AWS, Docker, SQL e Linux.</p>
   </div>
 
-  <!-- Stack Técnica -->
   <div class="section">
     <h2>🚀 Stack de Desenvolvimento</h2>
-    <p>Atuo na construção de aplicações completas, do frontend ao backend, com foco em performance, segurança e escalabilidade.</p>
     <ul>
       <li>🧠 Backend: C#, Python, SQL</li>
       <li>🎨 Frontend: React, JavaScript, HTML, CSS</li>
@@ -89,7 +101,6 @@
     </ul>
   </div>
 
-  <!-- Projetos -->
   <div class="section">
     <h2>📂 Projetos</h2>
     <a href="https://github.com/JoZoEzUd/pentest-toolkit" target="_blank"><button>🛠️ Pentest Toolkit</button></a>
@@ -97,13 +108,11 @@
     <a href="https://github.com/JoZoEzUd" target="_blank"><button>👤 Meu Perfil GitHub</button></a>
   </div>
 
-  <!-- Contato -->
   <div class="section">
     <h2>📡 Contato</h2>
-    <p>📧 Email: <a href="mailto:Joao_Jozo@outlook.com" style="color: #00ffff;">Joao_Jozo@outlook.com</a></p>
+    <p>📧 <a href="mailto:Joao_Jozo@outlook.com">Joao_Jozo@outlook.com</a></p>
     <p>💬 Discord: ezud12</p>
-    <p>🔗 <a href="www.linkedin.com/in/joão-batista-2206321t" target="_blank" style="color: #00ffff;">LinkedIn: João Batista</a></p>
+    <p>🔗 <a href="https://www.linkedin.com/in/jo%C3%A3o-batista-2206321t/" target="_blank">LinkedIn: João Batista</a></p>
   </div>
-
 </body>
 </html>
