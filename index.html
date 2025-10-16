@@ -1,417 +1,232 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Pyzum Dev — Transformando ideias em soluções digitais</title>
-  <meta name="description" content="Pyzum Dev — Desenvolvimento web moderno e sob medida. Freelancer: João Batista." />
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>João Batista | Desenvolvedor FullStack</title>
   <style>
-    :root{
-      --bg: #F5F5F5;
-      --card: #FFFFFF;
-      --text: #2E2E2E;
-      --muted: #6b6b6b;
-      --accent: #2196F3;
-      --accent-strong: #1976D2;
-      --glass: rgba(255,255,255,0.6);
-      --radius: 12px;
+    :root {
+      --bg-color: #0d0d0d;
+      --text-color: #f0f0f0;
+      --accent-color: #00ffff;
+      --btn-bg: transparent;
+      --btn-hover: #00ffff;
+      --btn-text: #00ffff;
     }
 
-    /* dark-mode variables (optional) */
-    body.dark {
-      --bg: #0d0d0d;
-      --card: #121212;
-      --text: #EDEDED;
-      --muted: #9a9a9a;
-      --accent: #00B0FF;
-      --accent-strong: #00A0E6;
+    body.light {
+      --bg-color: #f0f0f0;
+      --text-color: #0d0d0d;
+      --accent-color: #0077cc;
+      --btn-bg: transparent;
+      --btn-hover: #0077cc;
+      --btn-text: #0077cc;
     }
 
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Courier New", monospace;
-      background: var(--bg);
-      color: var(--text);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.5;
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      transition: background-color 0.3s, color 0.3s;
     }
 
-    header{
-      max-width:1100px;
-      margin: 24px auto;
-      display:flex;
-      gap:18px;
-      align-items:center;
-      padding: 14px;
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      animation: fadeIn 1s ease-in;
     }
 
-    .brand {
-      display:flex;
-      gap:12px;
-      align-items:center;
-      text-decoration:none;
-      color:inherit;
+    header h1 {
+      color: var(--accent-color);
+      font-size: 2.5em;
+      animation: pulse 2.5s infinite;
     }
 
-    .brand img {
-      width:72px;
-      height:72px;
-      object-fit:contain;
-      border-radius:10px;
-      background:transparent;
+    header p {
+      font-size: 1.1em;
+      color: #bbb;
     }
 
-    .brand h1 {
-      margin:0;
-      font-size:1.25rem;
-      letter-spacing:0.6px;
-    }
-
-    nav{
-      margin-left:auto;
-      display:flex;
-      gap:12px;
-      align-items:center;
+    nav {
+      text-align: center;
+      margin-bottom: 40px;
     }
 
     nav a {
-      color:var(--muted);
-      text-decoration:none;
-      font-weight:600;
-      padding:8px 12px;
-      border-radius:8px;
-      transition: all 0.15s;
+      color: var(--accent-color);
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    nav a:hover { color:var(--accent); background: rgba(33,150,243,0.06); }
-
-    /* HERO */
-    .hero {
-      max-width:1100px;
-      margin: 12px auto 28px;
-      padding: 28px;
-      display:grid;
-      grid-template-columns: 1fr 380px;
-      gap: 24px;
-      align-items:center;
-    }
-    .hero-card {
-      background: var(--card);
-      border-radius: var(--radius);
-      padding: 28px;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+    section {
+      max-width: 850px;
+      margin: auto;
+      padding: 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
     }
 
-    .hero h2 {
-      margin:0 0 10px 0;
-      color:var(--text);
-      font-size:1.6rem;
+    section:nth-of-type(2) { animation-delay: 0.3s; }
+    section:nth-of-type(3) { animation-delay: 0.6s; }
+    section:nth-of-type(4) { animation-delay: 0.9s; }
+
+    h2 {
+      color: var(--accent-color);
+      margin-bottom: 10px;
     }
-    .hero p.lead { margin: 0 0 18px 0; color:var(--muted); }
-    .cta-row { display:flex; gap:12px; margin-top:12px; flex-wrap:wrap; }
+
     .btn {
-      display:inline-block;
-      padding:10px 14px;
-      border-radius:10px;
-      text-decoration:none;
-      font-weight:700;
-      cursor:pointer;
-      border: 1px solid var(--accent);
-      color:var(--accent);
-      background: transparent;
-    }
-    .btn.primary {
-      background: linear-gradient(90deg,var(--accent),var(--accent-strong));
-      color:white;
-      border:none;
-      box-shadow: 0 6px 18px rgba(33,150,243,0.18);
+      display: inline-block;
+      background: var(--btn-bg);
+      border: 1px solid var(--accent-color);
+      color: var(--btn-text);
+      padding: 10px 20px;
+      margin-top: 20px;
+      text-decoration: none;
+      transition: all 0.3s ease;
     }
 
-    /* side card */
-    .profile {
-      background: linear-gradient(180deg, rgba(33,150,243,0.06), transparent);
-      border-radius: var(--radius);
-      padding:16px;
-      border: 1px solid rgba(33,150,243,0.08);
+    .btn:hover {
+      background-color: var(--btn-hover);
+      color: var(--bg-color);
     }
-    .profile img.avatar {
-      width:80px;
-      height:80px;
-      border-radius:12px;
-      object-fit:cover;
-      display:block;
-      margin-bottom:12px;
-      border:2px solid white;
-      background:#fff;
-    }
-    .profile h3 { margin:0 0 6px 0; }
-    .profile small { color:var(--muted); }
 
-    /* Sections */
-    main { max-width:1100px; margin: 0 auto; padding: 0 18px 60px; }
-    section { margin-top:28px; }
-
-    .grid-3 {
-      display:grid;
-      gap:16px;
-      grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
     }
 
     .card {
-      background: var(--card);
-      border-radius: 12px;
-      padding:16px;
-      border: 1px solid rgba(0,0,0,0.04);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+      border: 1px solid var(--accent-color);
+      border-radius: 10px;
+      padding: 15px;
+      transition: transform 0.3s ease;
     }
-    .card h4 { margin-top:0; }
-    .muted { color:var(--muted); font-size:0.95rem; }
 
-    /* projects list */
-    .project-actions { margin-top:12px; display:flex; gap:8px; flex-wrap:wrap; }
-
-    /* contact form */
-    form .row { display:flex; gap:10px; }
-    form input, form textarea {
-      width:100%;
-      padding:10px 12px;
-      border-radius:8px;
-      border:1px solid rgba(0,0,0,0.08);
-      background:transparent;
-      color:var(--text);
+    .card:hover {
+      transform: translateY(-5px);
     }
-    form textarea { min-height:110px; resize:vertical; }
-    .tiny { font-size:0.85rem; color:var(--muted); margin-top:8px; }
 
-    footer { max-width:1100px; margin:30px auto; padding:18px; text-align:center; color:var(--muted); }
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #888;
+    }
 
-    /* responsive */
-    @media (max-width:900px){
-      .hero { grid-template-columns: 1fr; }
-      header { padding:12px; }
-      nav { display:none; }
+    .toggle-mode {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--btn-bg);
+      border: 1px solid var(--accent-color);
+      color: var(--btn-text);
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 0.9em;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    a {
+      color: var(--accent-color);
+    }
+
+    body.light a {
+      color: #0077cc;
     }
   </style>
 </head>
 <body>
+  <button class="toggle-mode" onclick="toggleMode()">🌗 Alternar Tema</button>
 
-  <!-- HEADER -->
   <header>
-    <!-- substitua 'pyzum-logo.png' pelo nome do arquivo da sua logo -->
-    <a class="brand" href="#">
-      <img src="pyzum-logo.png" alt="Pyzum Dev logo" />
-      <div>
-        <h1>Pyzum Dev</h1>
-        <div class="muted">João Batista — Desenvolvedor FullStack</div>
-      </div>
-    </a>
-
-    <nav aria-label="navegação principal">
-      <a href="#inicio">Início</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
-    </nav>
+    <h1>João Batista</h1>
+    <p>Desenvolvedor FullStack Júnior | Fundador da DevPyzun</p>
   </header>
 
-  <!-- HERO -->
-  <section class="hero" id="inicio">
-    <div class="hero-card">
-      <h2>Transformando ideias em soluções digitais.</h2>
-      <p class="lead">Desenvolvimento web moderno e sob medida — sites, sistemas e automações que realmente funcionam para o seu negócio.</p>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </nav>
 
-      <div class="cta-row">
-        <a class="btn primary" href="#contato">Solicitar Orçamento</a>
-        <a class="btn" href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn" href="#projetos">Ver Projetos</a>
-      </div>
-
-      <section style="margin-top:18px;">
-        <h3 style="margin-bottom:6px;">Destaques</h3>
-        <div class="grid-3">
-          <div class="card">
-            <strong>Entrega rápida</strong>
-            <div class="muted">Protótipos e MVPs em semanas, não meses.</div>
-          </div>
-          <div class="card">
-            <strong>Boas práticas</strong>
-            <div class="muted">Código limpo, testes básicos e segurança.</div>
-          </div>
-          <div class="card">
-            <strong>Suporte</strong>
-            <div class="muted">Comunicação clara e prazos combinados.</div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <aside class="profile">
-      <!-- substitua 'avatar.jpg' por sua foto -->
-      <img class="avatar" src="avatar.jpg" alt="Foto João Batista" />
-      <h3>João Batista</h3>
-      <small class="muted">Fundador — Pyzum Dev</small>
-      <p class="muted" style="margin-top:10px;">Estudante de Ciência da Computação. Trabalho com React, Node.js, Python e Docker.</p>
-      <div style="margin-top:12px;">
-        <a class="btn" href="https://github.com/JoZoEzUd" target="_blank">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/jo%C3%A3o-batista-2206321t/" target="_blank">LinkedIn</a>
-      </div>
-    </aside>
+  <section id="sobre">
+    <h2>💻 Sobre mim</h2>
+    <p>Sou desenvolvedor <strong>FullStack</strong> especializado em criar sites e sistemas web modernos, rápidos e seguros. Atualmente curso <strong>Ciência da Computação</strong> e atuo como freelancer, ajudando empresas e profissionais a transformarem ideias em soluções digitais reais.</p>
+    <p>Tenho experiência com <strong>Python, JavaScript, React, Node.js, Docker</strong> e uso boas práticas de segurança e desempenho.</p>
   </section>
 
-  <main>
-    <!-- PROJETOS -->
-    <section id="projetos">
-      <h3>Projetos</h3>
-      <div class="grid-3" style="margin-top:12px;">
-        <div class="card">
-          <h4>Pentest Toolkit</h4>
-          <p class="muted">Ferramenta automatizada de testes de segurança em redes.</p>
-          <div class="project-actions">
-            <a class="btn" href="https://github.com/JoZoEzUd/pentest-toolkit" target="_blank">Ver no GitHub</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h4>AutoRecon</h4>
-          <p class="muted">Script de varredura automatizada para ambientes web.</p>
-          <div class="project-actions">
-            <a class="btn" href="https://github.com/JoZoEzUd/autorecon" target="_blank">Ver no GitHub</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h4>Mais trabalhos</h4>
-          <p class="muted">Repositório com outros scripts e ferramentas.</p>
-          <div class="project-actions">
-            <a class="btn" href="https://github.com/JoZoEzUd" target="_blank">Meu GitHub</a>
-          </div>
-        </div>
+  <section id="servicos">
+    <h2>🛠️ O que eu faço</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🧩 Integração de APIs</h3>
+        <p>Conecte sistemas e automatize fluxos de dados com segurança e eficiência.</p>
       </div>
-    </section>
-
-    <!-- SERVIÇOS -->
-    <section id="servicos">
-      <h3 style="margin-top:18px;">Serviços</h3>
-      <div class="grid-3" style="margin-top:12px;">
-        <div class="card">
-          <h4>Sites institucionais</h4>
-          <p class="muted">Landing pages e sites responsivos para pequenos negócios.</p>
-        </div>
-        <div class="card">
-          <h4>Sistemas / CRUD</h4>
-          <p class="muted">Painéis administrativos, controle de agendamentos e estoque.</p>
-        </div>
-        <div class="card">
-          <h4>Integração de APIs</h4>
-          <p class="muted">Conexão de ferramentas, pagamentos e automações internas.</p>
-        </div>
-        <div class="card">
-          <h4>Automação com Python</h4>
-          <p class="muted">Scripts para processos repetitivos e ETL simples.</p>
-        </div>
-        <div class="card">
-          <h4>Correção de bugs</h4>
-          <p class="muted">Análise rápida e solução de problemas em sites e APIs.</p>
-        </div>
-        <div class="card">
-          <h4>Manutenção e suporte</h4>
-          <p class="muted">Pacotes mensais para pequenas empresas (contrato simples).</p>
-        </div>
+      <div class="card">
+        <h3>📱 Sites Responsivos</h3>
+        <p>Criação de sites modernos que funcionam perfeitamente em qualquer dispositivo.</p>
       </div>
-    </section>
-
-    <!-- SOBRE -->
-    <section id="sobre">
-      <h3 style="margin-top:18px;">Sobre</h3>
-      <div class="card" style="margin-top:12px;">
-        <p>Sou estudante de Ciência da Computação e atuo como freelancer. Tenho foco em entregar soluções práticas, com atenção à segurança e desempenho. Trabalho com tecnologias modernas como React, Node.js, Python e Docker.</p>
-        <p class="tiny">Disponível para freelas locais e remotos. Posso entregar protótipos rápidos e MVPs.</p>
+      <div class="card">
+        <h3>⚙️ Automação com Python</h3>
+        <p>Scripts inteligentes para otimizar tarefas e economizar tempo no dia a dia.</p>
       </div>
-    </section>
-
-    <!-- CONTATO -->
-    <section id="contato">
-      <h3 style="margin-top:18px;">Contato</h3>
-      <div class="grid-3" style="margin-top:12px;">
-        <div class="card">
-          <h4>Me envie uma mensagem</h4>
-          <form id="contact-form">
-            <div style="margin-bottom:10px;">
-              <input type="text" name="from_name" placeholder="Seu nome" required />
-            </div>
-            <div style="margin-bottom:10px;">
-              <input type="email" name="reply_to" placeholder="Seu e-mail" required />
-            </div>
-            <div style="margin-bottom:10px;">
-              <textarea name="message" placeholder="Como posso ajudar?" required></textarea>
-            </div>
-            <div style="display:flex; gap:8px; align-items:center;">
-              <button class="btn primary" type="submit">Enviar Mensagem</button>
-              <div id="status" class="tiny" aria-live="polite"></div>
-            </div>
-            <p class="tiny" style="margin-top:8px;">Ou me chame direto no WhatsApp: <a href="https://wa.me/55SEUNUMERO" target="_blank">WhatsApp</a></p>
-          </form>
-        </div>
-
-        <div class="card">
-          <h4>Informações</h4>
-          <p class="muted">Email: <a href="mailto:Joao_Jozo@outlook.com">Joao_Jozo@outlook.com</a></p>
-          <p class="muted">Discord: ezud12</p>
-          <p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/jo%C3%A3o-batista-2206321t/" target="_blank">/in/joao-batista</a></p>
-        </div>
-
-        <div class="card">
-          <h4>Locais de trabalho</h4>
-          <p class="muted">Atendo remotamente e também posso trabalhar presencialmente em Sorocaba / Região (sob consulta).</p>
-        </div>
+      <div class="card">
+        <h3>🧰 CRUDs e Dashboards</h3>
+        <p>Sistemas administrativos completos e intuitivos com banco de dados real.</p>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <h2>📂 Projetos</h2>
+    <p><strong>Pentest Toolkit</strong> — Ferramenta automatizada de testes de segurança em redes.  
+      <a href="https://github.com/JoZoEzUd/pentest-toolkit" class="btn" target="_blank">Ver Projeto</a></p>
+    <p><strong>AutoRecon</strong> — Script para varredura automatizada em ambientes web.  
+      <a href="https://github.com/JoZoEzUd/autorecon" class="btn" target="_blank">Ver Projeto</a></p>
+    <p><a href="https://github.com/JoZoEzUd" class="btn" target="_blank">Ver Meu GitHub</a></p>
+  </section>
+
+  <section id="contato">
+    <h2>📡 Contato</h2>
+    <p>Email: <a href="mailto:Joao_Jozo@outlook.com">Joao_Jozo@outlook.com</a></p>
+    <p>Discord: ezud12</p>
+    <p><a href="https://wa.me/55SEUNUMERO" class="btn" target="_blank">WhatsApp</a></p>
+    <p><a href="https://www.linkedin.com/in/jo%C3%A3o-batista-2206321t/" class="btn" target="_blank">LinkedIn</a></p>
+  </section>
 
   <footer>
-    © <strong>Pyzum Dev</strong> — João Batista • Desenvolvedor FullStack
+    <p>© João Batista — Desenvolvedor Freelancer | <span style="color: var(--accent-color);">DevPyzun</span></p>
   </footer>
 
-  <!-- EmailJS SDK -->
-  <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
   <script>
-    // -> Substitua pelos seus IDs do EmailJS (crie conta em https://www.emailjs.com)
-    const EMAILJS_USER_ID = 'SEU_USER_ID';
-    const EMAILJS_SERVICE_ID = 'SEU_SERVICE_ID';
-    const EMAILJS_TEMPLATE_ID = 'SEU_TEMPLATE_ID';
-
-    (function(){
-      if (window.emailjs) {
-        emailjs.init(EMAILJS_USER_ID);
-      }
-    })();
-
-    const form = document.getElementById('contact-form');
-    const status = document.getElementById('status');
-
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      status.textContent = 'Enviando...';
-
-      // enviar usando sendForm
-      emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this)
-        .then(function(){
-          status.textContent = 'Mensagem enviada! Obrigado — respondo em breve.';
-          form.reset();
-        }, function(err){
-          console.error(err);
-          status.textContent = 'Erro ao enviar. Tente novamente ou use o WhatsApp.';
-        });
-    });
-
-    // opção simples: alternar tema ao pressionar 't' (apenas para desenvolvimento)
-    document.addEventListener('keydown', e => {
-      if (e.key.toLowerCase() === 't') document.body.classList.toggle('dark');
-    });
+    function toggleMode() {
+      document.body.classList.toggle('light');
+    }
   </script>
 </body>
 </html>
