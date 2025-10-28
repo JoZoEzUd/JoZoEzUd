@@ -7,7 +7,6 @@
 
 ## 👾 Sobre mim  
 - 💻 Estudante de Ciência da Computação  
-- 🔐
 - 🤖 Engenheiro de IA / Desenvolvedor FullStack 
 
 ---
