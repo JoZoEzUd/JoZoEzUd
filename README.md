@@ -1,13 +1,13 @@
 <h1 align="center">João Batista 🇧🇷</h1>
 <p align="center">
-  💻 Estudante de Ciência da Computação • 🤖 IA & ⚙️FullStack Dev 
+  💻 Estudante de Ciência da Computação • cibersegurança & ⚙️FullStack Dev 
 </p>
 
 ---
 
 ## 👾 Sobre mim  
 - 💻 Estudante de Ciência da Computação  
-- 🤖 Engenheiro de IA / Desenvolvedor FullStack 
+- 🤖 cibersegurança/ Desenvolvedor FullStack 
 
 ---
 
