@@ -7,7 +7,7 @@
 
 ## 👾 Sobre mim  
 - 💻 Estudante de Ciência da Computação  
-- 🤖 cibersegurança/ Desenvolvedor FullStack 
+- 🤖 Desenvolvedor backend
 
 ---
 
