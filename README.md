@@ -1,6 +1,6 @@
 <h1 align="center">João Batista 🇧🇷</h1>
 <p align="center">
-  💻 Estudante de Ciência da Computação • cibersegurança & ⚙️FullStack Dev 
+  💻 Estudante de Ciência da Computação • cibersegurança & ⚙️Backend Dev 
 </p>
 
 ---
