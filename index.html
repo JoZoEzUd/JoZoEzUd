@@ -1,227 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Diego — Cloud Security</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Photo.jpg" />
 
-<style>
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #ffffff;
-    color: #0f172a;
-}
+  <!-- Primary Meta Tags -->
+  <title>Diego — Cloud Security & Cybersecurity</title>
+  <meta name="title" content="Diego — Cloud Security & Cybersecurity" />
+  <meta name="description" content="Sou Diego, estudante de Ciência da Computação com foco em Cloud Security, Cybersecurity e Pentest. Portfólio profissional com projetos, estudos e contato." />
+  <meta name="keywords" content="Diego, Cloud Security, Cybersecurity, Pentest, SOC, AWS, Segurança da Informação, Portfólio TI" />
 
-.container {
-    max-width: 720px;
-    margin: auto;
-    padding: 90px 20px;
-}
+  <!-- Mobile / Theme -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#030014" />
+  <meta name="msapplication-navbutton-color" content="#030014" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-header {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 0.8s ease forwards;
-}
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://SEU-DOMINIO-AQUI/" />
+  <meta property="og:title" content="Diego — Cloud Security & Cybersecurity" />
+  <meta property="og:description" content="Portfólio de Diego — estudante de Ciência da Computação focado em Cloud Security, SOC e Pentest." />
+  <meta property="og:image" content="https://SEU-DOMINIO-AQUI/Meta.png" />
 
-h1 {
-    font-size: 2.8em;
-    margin-bottom: 10px;
-}
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://SEU-DOMINIO-AQUI/" />
+  <meta name="twitter:title" content="Diego — Cloud Security & Cybersecurity" />
+  <meta name="twitter:description" content="Portfólio profissional em Cloud Security, SOC e Pentest." />
+  <meta name="twitter:image" content="https://SEU-DOMINIO-AQUI/Meta.png" />
 
-.subtitle {
-    font-size: 1.1em;
-    color: #475569;
-}
+  <!-- Structured Data (SEO forte para recrutador e Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Home",
+        "url": "https://SEU-DOMINIO-AQUI/#Home"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "About",
+        "url": "https://SEU-DOMINIO-AQUI/#About"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Projects",
+        "url": "https://SEU-DOMINIO-AQUI/#Projects"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Contact",
+        "url": "https://SEU-DOMINIO-AQUI/#Contact"
+      }
+    ]
+  }
+  </script>
 
-.links {
-    margin-top: 20px;
-}
-
-.links a, .lang-btn {
-    margin-right: 15px;
-    color: #0284c7;
-    text-decoration: none;
-    font-weight: 500;
-    cursor: pointer;
-    background: none;
-    border: none;
-    font-size: 1em;
-}
-
-section {
-    margin-top: 60px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s ease;
-}
-
-section.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-h2 {
-    font-size: 0.85em;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #64748b;
-    margin-bottom: 18px;
-}
-
-p {
-    font-size: 1.05em;
-    line-height: 1.7;
-}
-
-.item {
-    margin-bottom: 30px;
-}
-
-.tags span {
-    display: inline-block;
-    margin: 6px 10px 0 0;
-    font-size: 0.9em;
-    color: #0284c7;
-}
-
-footer {
-    margin-top: 80px;
-    font-size: 0.9em;
-    color: #94a3b8;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-</style>
+  <!-- Vite / React build -->
+  <script type="module" crossorigin src="/assets/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index.css">
 </head>
 
 <body>
-
-<div class="container">
-
-<header>
-    <h1 id="name">Diego</h1>
-    <div class="subtitle" id="title">
-        Estudante de Ciência da Computação · Cloud Security & Cybersecurity
-    </div>
-
-    <div class="links">
-        <a href="#">GitHub</a>
-        <a href="#">LinkedIn</a>
-        <button class="lang-btn" onclick="setLang('pt')">PT</button>
-        <button class="lang-btn" onclick="setLang('en')">EN</button>
-    </div>
-</header>
-
-<section>
-<h2 id="resumeTitle">Resumo</h2>
-<p id="resumeText"></p>
-</section>
-
-<section>
-<h2 id="projectsTitle">Projetos</h2>
-
-<div class="item">
-<strong id="p1Title"></strong>
-<p id="p1Desc"></p>
-<div class="tags">
-<span>#AWS</span><span>#CloudSecurity</span><span>#IAM</span>
-</div>
-</div>
-
-<div class="item">
-<strong id="p2Title"></strong>
-<p id="p2Desc"></p>
-<div class="tags">
-<span>#OWASP</span><span>#WebSecurity</span><span>#Linux</span>
-</div>
-</div>
-
-</section>
-
-<section>
-<h2 id="skillsTitle">Competências</h2>
-<p id="skillsText"></p>
-</section>
-
-<section>
-<h2 id="eduTitle">Formação</h2>
-<p id="eduText"></p>
-</section>
-
-<footer>
-© 2025 · Diego
-</footer>
-
-</div>
-
-<script>
-const content = {
-    pt: {
-        resumeTitle: "Resumo",
-        resumeText:
-            "Estudante de Ciência da Computação (UNIP – 2º semestre), com foco em Cloud Security e Segurança da Informação. Experiência prática com AWS (IAM, VPC, EC2), Linux, redes e fundamentos do OWASP Top 10. Busco estágio em Cloud, SOC ou Segurança da Informação.",
-        projectsTitle: "Projetos",
-        p1Title: "Ambiente AWS Seguro",
-        p1Desc:
-            "Arquitetura cloud segura com VPC privada, controle de acesso com IAM (menor privilégio), Security Groups restritos e monitoramento com CloudWatch.",
-        p2Title: "OWASP Top 10 — Laboratório",
-        p2Desc:
-            "Análise prática de vulnerabilidades web com base no OWASP Top 10, em ambiente controlado e com documentação técnica.",
-        skillsTitle: "Competências",
-        skillsText:
-            "AWS · Cloud Security · Linux · Redes · Segurança da Informação · OWASP Top 10 · Git/GitHub · Python (básico)",
-        eduTitle: "Formação",
-        eduText:
-            "Ciência da Computação — UNIP (2024–2028, em andamento)"
-    },
-    en: {
-        resumeTitle: "Summary",
-        resumeText:
-            "Computer Science student (UNIP – 2nd semester) focused on Cloud Security and Information Security. Hands-on experience with AWS (IAM, VPC, EC2), Linux, networking and OWASP Top 10 fundamentals. Seeking an internship in Cloud, SOC or Information Security.",
-        projectsTitle: "Projects",
-        p1Title: "Secure AWS Environment",
-        p1Desc:
-            "Designed a secure cloud architecture using private VPC, least-privilege IAM policies, restricted Security Groups and CloudWatch monitoring.",
-        p2Title: "OWASP Top 10 Lab",
-        p2Desc:
-            "Hands-on analysis of web vulnerabilities based on the OWASP Top 10 in a controlled environment with technical documentation.",
-        skillsTitle: "Skills",
-        skillsText:
-            "AWS · Cloud Security · Linux · Networking · Information Security · OWASP Top 10 · Git/GitHub · Python (basic)",
-        eduTitle: "Education",
-        eduText:
-            "Computer Science — UNIP (2024–2028, ongoing)"
-    }
-};
-
-function setLang(lang) {
-    for (let key in content[lang]) {
-        document.getElementById(key).innerText = content[lang][key];
-    }
-}
-
-setLang('pt');
-
-const sections = document.querySelectorAll("section");
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-        }
-    });
-}, { threshold: 0.2 });
-
-sections.forEach(section => observer.observe(section));
-</script>
-
+  <div id="root"></div>
 </body>
 </html>
