@@ -1,232 +1,148 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>João Batista | Desenvolvedor FullStack</title>
-  <style>
-    :root {
-      --bg-color: #0d0d0d;
-      --text-color: #f0f0f0;
-      --accent-color: #00ffff;
-      --btn-bg: transparent;
-      --btn-hover: #00ffff;
-      --btn-text: #00ffff;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diego — Cloud Security</title>
 
-    body.light {
-      --bg-color: #f0f0f0;
-      --text-color: #0d0d0d;
-      --accent-color: #0077cc;
-      --btn-bg: transparent;
-      --btn-hover: #0077cc;
-      --btn-text: #0077cc;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    body {
-      margin: 0;
-      font-family: 'Courier New', monospace;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      line-height: 1.6;
-      transition: background-color 0.3s, color 0.3s;
-    }
+<style>
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #0f172a;
+}
 
-    header {
-      text-align: center;
-      padding: 60px 20px 30px;
-      animation: fadeIn 1s ease-in;
-    }
+.container {
+    max-width: 760px;
+    margin: auto;
+    padding: 80px 20px;
+}
 
-    header h1 {
-      color: var(--accent-color);
-      font-size: 2.5em;
-      animation: pulse 2.5s infinite;
-    }
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
 
-    header p {
-      font-size: 1.1em;
-      color: #bbb;
-    }
+.subtitle {
+    font-size: 1.1em;
+    color: #475569;
+    margin-bottom: 40px;
+}
 
-    nav {
-      text-align: center;
-      margin-bottom: 40px;
-    }
+section {
+    margin-bottom: 50px;
+}
 
-    nav a {
-      color: var(--accent-color);
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+h2 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #64748b;
+    margin-bottom: 15px;
+}
 
-    section {
-      max-width: 850px;
-      margin: auto;
-      padding: 20px;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s ease forwards;
-    }
+p {
+    font-size: 1.05em;
+    line-height: 1.6;
+}
 
-    section:nth-of-type(2) { animation-delay: 0.3s; }
-    section:nth-of-type(3) { animation-delay: 0.6s; }
-    section:nth-of-type(4) { animation-delay: 0.9s; }
+a {
+    color: #0284c7;
+    text-decoration: none;
+}
 
-    h2 {
-      color: var(--accent-color);
-      margin-bottom: 10px;
-    }
+.item {
+    margin-bottom: 20px;
+}
 
-    .btn {
-      display: inline-block;
-      background: var(--btn-bg);
-      border: 1px solid var(--accent-color);
-      color: var(--btn-text);
-      padding: 10px 20px;
-      margin-top: 20px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: var(--btn-hover);
-      color: var(--bg-color);
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 15px;
-      margin-top: 15px;
-    }
-
-    .card {
-      border: 1px solid var(--accent-color);
-      border-radius: 10px;
-      padding: 15px;
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      font-size: 0.9em;
-      color: #888;
-    }
-
-    .toggle-mode {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: var(--btn-bg);
-      border: 1px solid var(--accent-color);
-      color: var(--btn-text);
-      padding: 8px 12px;
-      cursor: pointer;
-      font-size: 0.9em;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-
-    a {
-      color: var(--accent-color);
-    }
-
-    body.light a {
-      color: #0077cc;
-    }
-  </style>
+.tags span {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    font-size: 0.9em;
+    color: #0284c7;
+}
+</style>
 </head>
+
 <body>
-  <button class="toggle-mode" onclick="toggleMode()">🌗 Alternar Tema</button>
 
-  <header>
-    <h1>João Batista</h1>
-    <p>Desenvolvedor FullStack Júnior | Fundador da DevPyzun</p>
-  </header>
+<div class="container">
 
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#contato">Contato</a>
-  </nav>
-
-  <section id="sobre">
-    <h2>💻 Sobre mim</h2>
-    <p>Sou desenvolvedor <strong>FullStack</strong> especializado em criar sites e sistemas web modernos, rápidos e seguros. Atualmente curso <strong>Ciência da Computação</strong> e atuo como freelancer, ajudando empresas e profissionais a transformarem ideias em soluções digitais reais.</p>
-    <p>Tenho experiência com <strong>Python, JavaScript, React, Node.js, Docker</strong> e uso boas práticas de segurança e desempenho.</p>
-  </section>
-
-  <section id="servicos">
-    <h2>🛠️ O que eu faço</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>🧩 Integração de APIs</h3>
-        <p>Conecte sistemas e automatize fluxos de dados com segurança e eficiência.</p>
-      </div>
-      <div class="card">
-        <h3>📱 Sites Responsivos</h3>
-        <p>Criação de sites modernos que funcionam perfeitamente em qualquer dispositivo.</p>
-      </div>
-      <div class="card">
-        <h3>⚙️ Automação com Python</h3>
-        <p>Scripts inteligentes para otimizar tarefas e economizar tempo no dia a dia.</p>
-      </div>
-      <div class="card">
-        <h3>🧰 CRUDs e Dashboards</h3>
-        <p>Sistemas administrativos completos e intuitivos com banco de dados real.</p>
-      </div>
+<header>
+    <h1>Diego</h1>
+    <div class="subtitle">
+        Estudante de Ciência da Computação — Cloud Security & Cybersecurity
     </div>
-  </section>
 
-  <section id="projetos">
-    <h2>📂 Projetos</h2>
-    <p><strong>Pentest Toolkit</strong> — Ferramenta automatizada de testes de segurança em redes.  
-      <a href="https://github.com/JoZoEzUd/pentest-toolkit" class="btn" target="_blank">Ver Projeto</a></p>
-    <p><strong>AutoRecon</strong> — Script para varredura automatizada em ambientes web.  
-      <a href="https://github.com/JoZoEzUd/autorecon" class="btn" target="_blank">Ver Projeto</a></p>
-    <p><a href="https://github.com/JoZoEzUd" class="btn" target="_blank">Ver Meu GitHub</a></p>
-  </section>
+    <p>
+        <a href="https://github.com/seuusuario">GitHub</a> ·
+        <a href="https://linkedin.com/in/seuperfil">LinkedIn</a> ·
+        seuemail@email.com
+    </p>
+</header>
 
-  <section id="contato">
-    <h2>📡 Contato</h2>
-    <p>Email: <a href="mailto:Joao_Jozo@outlook.com">Joao_Jozo@outlook.com</a></p>
-    <p>Discord: ezud12</p>
-    <p><a href="https://wa.me/55SEUNUMERO" class="btn" target="_blank">WhatsApp</a></p>
-    <p><a href="https://www.linkedin.com/in/jo%C3%A3o-batista-2206321t/" class="btn" target="_blank">LinkedIn</a></p>
-  </section>
+<section>
+<h2>Resumo</h2>
+<p>
+Estudante de Ciência da Computação (UNIP – 2º semestre), com foco em
+Cloud Security e Segurança da Informação.
+Experiência prática com AWS (IAM, VPC, EC2),
+Linux, redes e estudos baseados no OWASP Top 10.
+Busco estágio em Cloud, SOC ou Segurança da Informação.
+</p>
+</section>
 
-  <footer>
-    <p>© João Batista — Desenvolvedor Freelancer | <span style="color: var(--accent-color);">DevPyzun</span></p>
-  </footer>
+<section>
+<h2>Projetos</h2>
 
-  <script>
-    function toggleMode() {
-      document.body.classList.toggle('light');
-    }
-  </script>
+<div class="item">
+<strong>Ambiente AWS Seguro</strong><br>
+<p>
+Arquitetura cloud segura utilizando VPC privada,
+IAM com menor privilégio, Security Groups e monitoramento com CloudWatch.
+</p>
+<div class="tags">
+<span>#AWS</span>
+<span>#CloudSecurity</span>
+<span>#IAM</span>
+</div>
+</div>
+
+<div class="item">
+<strong>OWASP Top 10 Lab</strong><br>
+<p>
+Análise prática de vulnerabilidades web em ambiente controlado,
+com documentação técnica.
+</p>
+<div class="tags">
+<span>#OWASP</span>
+<span>#WebSecurity</span>
+<span>#Linux</span>
+</div>
+</div>
+
+</section>
+
+<section>
+<h2>Competências</h2>
+<p>
+AWS · Cloud Security · Linux · Redes · Segurança da Informação ·
+OWASP Top 10 · Git/GitHub · Python (básico)
+</p>
+</section>
+
+<section>
+<h2>Formação</h2>
+<p>
+<strong>Ciência da Computação</strong><br>
+UNIP — 2024–2028 (em andamento)
+</p>
+</section>
+
+</div>
+
 </body>
 </html>
