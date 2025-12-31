@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Diego — Cloud Security</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 body {
@@ -16,53 +16,70 @@ body {
 }
 
 .container {
-    max-width: 760px;
+    max-width: 720px;
     margin: auto;
-    padding: 80px 20px;
+    padding: 90px 20px;
 }
 
-h1 {
-    font-size: 2.8em;
-    margin-bottom: 10px;
+header h1 {
+    font-size: 2.9em;
+    margin: 0;
+    font-weight: 700;
 }
 
-.subtitle {
+header p {
+    margin-top: 10px;
     font-size: 1.1em;
     color: #475569;
-    margin-bottom: 40px;
+}
+
+.links {
+    margin-top: 25px;
+}
+
+.links a {
+    margin-right: 15px;
+    color: #0284c7;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 section {
-    margin-bottom: 50px;
+    margin-top: 60px;
 }
 
-h2 {
-    font-size: 1.2em;
+section h2 {
+    font-size: 0.9em;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    letter-spacing: 1px;
     color: #64748b;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 p {
     font-size: 1.05em;
-    line-height: 1.6;
-}
-
-a {
-    color: #0284c7;
-    text-decoration: none;
+    line-height: 1.7;
 }
 
 .item {
-    margin-bottom: 20px;
+    margin-bottom: 28px;
+}
+
+.item strong {
+    font-weight: 600;
 }
 
 .tags span {
     display: inline-block;
-    margin: 6px 6px 0 0;
+    margin: 6px 10px 0 0;
     font-size: 0.9em;
     color: #0284c7;
+}
+
+footer {
+    margin-top: 80px;
+    font-size: 0.9em;
+    color: #94a3b8;
 }
 </style>
 </head>
@@ -73,25 +90,24 @@ a {
 
 <header>
     <h1>Diego</h1>
-    <div class="subtitle">
-        Estudante de Ciência da Computação — Cloud Security & Cybersecurity
-    </div>
-
     <p>
-        <a href="https://github.com/seuusuario">GitHub</a> ·
-        <a href="https://linkedin.com/in/seuperfil">LinkedIn</a> ·
-        seuemail@email.com
+        Estudante de Ciência da Computação · Cloud Security & Cybersecurity
     </p>
+
+    <div class="links">
+        <a href="https://github.com/seuusuario" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/seuperfil" target="_blank">LinkedIn</a>
+        <a href="mailto:seuemail@email.com">Email</a>
+    </div>
 </header>
 
 <section>
 <h2>Resumo</h2>
 <p>
-Estudante de Ciência da Computação (UNIP – 2º semestre), com foco em
-Cloud Security e Segurança da Informação.
-Experiência prática com AWS (IAM, VPC, EC2),
-Linux, redes e estudos baseados no OWASP Top 10.
-Busco estágio em Cloud, SOC ou Segurança da Informação.
+Estudante de Ciência da Computação (UNIP – 2º semestre), com foco em Cloud Security
+e Segurança da Informação. Experiência prática com AWS (IAM, VPC, EC2),
+Linux, redes e fundamentos do OWASP Top 10.
+Busco oportunidade de estágio em Cloud, SOC ou Segurança da Informação.
 </p>
 </section>
 
@@ -99,10 +115,11 @@ Busco estágio em Cloud, SOC ou Segurança da Informação.
 <h2>Projetos</h2>
 
 <div class="item">
-<strong>Ambiente AWS Seguro</strong><br>
+<strong>Ambiente AWS Seguro</strong>
 <p>
 Arquitetura cloud segura utilizando VPC privada,
-IAM com menor privilégio, Security Groups e monitoramento com CloudWatch.
+controle de acesso com IAM (menor privilégio),
+Security Groups e monitoramento com CloudWatch.
 </p>
 <div class="tags">
 <span>#AWS</span>
@@ -112,10 +129,10 @@ IAM com menor privilégio, Security Groups e monitoramento com CloudWatch.
 </div>
 
 <div class="item">
-<strong>OWASP Top 10 Lab</strong><br>
+<strong>OWASP Top 10 — Laboratório</strong>
 <p>
-Análise prática de vulnerabilidades web em ambiente controlado,
-com documentação técnica.
+Estudo e exploração controlada de vulnerabilidades web
+com documentação técnica baseada no OWASP Top 10.
 </p>
 <div class="tags">
 <span>#OWASP</span>
@@ -141,6 +158,10 @@ OWASP Top 10 · Git/GitHub · Python (básico)
 UNIP — 2024–2028 (em andamento)
 </p>
 </section>
+
+<footer>
+© 2025 · Diego
+</footer>
 
 </div>
 
