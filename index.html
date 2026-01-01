@@ -1,75 +1,164 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+import { motion } from "framer-motion";
+import { Cloud, ShieldCheck, Code, Github, Linkedin, Mail, Award, Server } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="Photo.jpg" />
+export default function Portfolio() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-black via-slate-900 to-black text-white overflow-x-hidden">
 
-  <!-- Primary Meta Tags -->
-  <title>Diego — Cloud Security & Cybersecurity</title>
-  <meta name="title" content="Diego — Cloud Security & Cybersecurity" />
-  <meta name="description" content="Sou Diego, estudante de Ciência da Computação com foco em Cloud Security, Cybersecurity e Pentest. Portfólio profissional com projetos, estudos e contato." />
-  <meta name="keywords" content="Diego, Cloud Security, Cybersecurity, Pentest, SOC, AWS, Segurança da Informação, Portfólio TI" />
+      {/* BACKGROUND ANIMADO */}
+      <div className="fixed inset-0 -z-10 opacity-20 animate-pulse bg-[radial-gradient(circle_at_center,rgba(34,211,238,0.18),transparent_70%)]" />
 
-  <!-- Mobile / Theme -->
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="theme-color" content="#030014" />
-  <meta name="msapplication-navbutton-color" content="#030014" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+      {/* HERO */}
+      <section className="h-screen flex flex-col items-center justify-center text-center px-6">
+        <motion.h1
+          initial={{ opacity: 0, y: -60 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-5xl md:text-7xl font-bold"
+        >
+          Diego <span className="text-cyan-400">Cloud Security</span>
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6 }}
+          className="mt-6 max-w-2xl text-slate-300 text-lg"
+        >
+          Estudante de Ciência da Computação focado exclusivamente em segurança de ambientes em nuvem,
+          proteção de infraestruturas cloud e monitoramento de ameaças.
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1 }}
+          className="mt-10 flex gap-4"
+        >
+          <Button className="rounded-2xl px-8">Projetos</Button>
+          <Button variant="outline" className="rounded-2xl px-8">Contato</Button>
+        </motion.div>
+      </section>
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://SEU-DOMINIO-AQUI/" />
-  <meta property="og:title" content="Diego — Cloud Security & Cybersecurity" />
-  <meta property="og:description" content="Portfólio de Diego — estudante de Ciência da Computação focado em Cloud Security, SOC e Pentest." />
-  <meta property="og:image" content="https://SEU-DOMINIO-AQUI/Meta.png" />
+      {/* SOBRE */}
+      <section className="max-w-6xl mx-auto px-6 py-24">
+        <motion.h2
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="text-4xl font-semibold mb-10"
+        >
+          Sobre mim
+        </motion.h2>
+        <p className="text-slate-300 max-w-3xl leading-relaxed">
+          Atuo com foco total em Cloud Security, estudando arquitetura segura,
+          controle de identidades, monitoramento, resposta a incidentes e boas práticas
+          para ambientes AWS. Busco estágio e projetos voltados exclusivamente à segurança em nuvem.
+        </p>
+      </section>
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://SEU-DOMINIO-AQUI/" />
-  <meta name="twitter:title" content="Diego — Cloud Security & Cybersecurity" />
-  <meta name="twitter:description" content="Portfólio profissional em Cloud Security, SOC e Pentest." />
-  <meta name="twitter:image" content="https://SEU-DOMINIO-AQUI/Meta.png" />
+      {/* ESPECIALIDADES CLOUD */}
+      <section className="bg-slate-950 py-24">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl font-semibold mb-14">Especialidades em Cloud Security</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="rounded-2xl bg-slate-900">
+              <CardContent className="p-8">
+                <Cloud className="text-cyan-400 w-12 h-12 mb-4" />
+                <h3 className="text-xl font-semibold">AWS Security</h3>
+                <p className="text-slate-400 mt-2">IAM, VPC, Security Groups, CloudTrail, GuardDuty.</p>
+              </CardContent>
+            </Card>
+            <Card className="rounded-2xl bg-slate-900">
+              <CardContent className="p-8">
+                <ShieldCheck className="text-cyan-400 w-12 h-12 mb-4" />
+                <h3 className="text-xl font-semibold">Defensive Cloud</h3>
+                <p className="text-slate-400 mt-2">Monitoramento, logs, detecção e resposta.</p>
+              </CardContent>
+            </Card>
+            <Card className="rounded-2xl bg-slate-900">
+              <CardContent className="p-8">
+                <Code className="text-cyan-400 w-12 h-12 mb-4" />
+                <h3 className="text-xl font-semibold">Automação</h3>
+                <p className="text-slate-400 mt-2">Python, Bash e scripts para segurança cloud.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
 
-  <!-- Structured Data (SEO forte para recrutador e Google) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": [
-      {
-        "@type": "SiteNavigationElement",
-        "name": "Home",
-        "url": "https://SEU-DOMINIO-AQUI/#Home"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "name": "About",
-        "url": "https://SEU-DOMINIO-AQUI/#About"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "name": "Projects",
-        "url": "https://SEU-DOMINIO-AQUI/#Projects"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "name": "Contact",
-        "url": "https://SEU-DOMINIO-AQUI/#Contact"
-      }
-    ]
-  }
-  </script>
+      {/* TIMELINE */}
+      <section className="max-w-6xl mx-auto px-6 py-24">
+        <h2 className="text-4xl font-semibold mb-14">Linha de Evolução</h2>
+        <div className="space-y-8">
+          <div className="border-l-2 border-cyan-400 pl-6">
+            <h3 className="text-xl font-semibold">Fundamentos</h3>
+            <p className="text-slate-400">Linux, redes, segurança da informação.</p>
+          </div>
+          <div className="border-l-2 border-cyan-400 pl-6">
+            <h3 className="text-xl font-semibold">Cloud Security</h3>
+            <p className="text-slate-400">AWS, IAM, monitoramento e arquitetura segura.</p>
+          </div>
+          <div className="border-l-2 border-cyan-400 pl-6">
+            <h3 className="text-xl font-semibold">Projetos Avançados</h3>
+            <p className="text-slate-400">TCC, detecção de ataques e automação.</p>
+          </div>
+        </div>
+      </section>
 
-  <!-- Vite / React build -->
-  <script type="module" crossorigin src="/assets/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index.css">
-</head>
+      {/* PROJETOS – CASE STUDY */}
+      <section className="bg-slate-950 py-24">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl font-semibold mb-14">Projetos em Cloud Security</h2>
+          <div className="grid md:grid-cols-2 gap-10">
+            <motion.div whileHover={{ scale: 1.05 }}>
+              <Card className="rounded-2xl bg-slate-900">
+                <CardContent className="p-8 space-y-3">
+                  <Server className="text-cyan-400 w-10 h-10" />
+                  <h3 className="text-xl font-semibold">Plataforma de Detecção de Ataques em AWS</h3>
+                  <p className="text-slate-400">Coleta de logs (CloudTrail + VPC Flow Logs), análise e alertas.</p>
+                  <p className="text-sm text-slate-500">IAM • GuardDuty • Lambda • CloudWatch</p>
+                </CardContent>
+              </Card>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }}>
+              <Card className="rounded-2xl bg-slate-900">
+                <CardContent className="p-8 space-y-3">
+                  <Cloud className="text-cyan-400 w-10 h-10" />
+                  <h3 className="text-xl font-semibold">Arquitetura Cloud Segura</h3>
+                  <p className="text-slate-400">Modelo de referência com foco em segurança e compliance.</p>
+                  <p className="text-sm text-slate-500">VPC • Security Groups • IAM Policies</p>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
-<body>
-  <div id="root"></div>
-</body>
-</html>
+      {/* CERTIFICAÇÕES */}
+      <section className="max-w-6xl mx-auto px-6 py-24">
+        <h2 className="text-4xl font-semibold mb-14">Certificações & Estudos</h2>
+        <div className="grid md:grid-cols-3 gap-8">
+          <Card className="rounded-2xl bg-slate-900"><CardContent className="p-6"><Award className="text-cyan-400 w-8 h-8 mb-3" />AWS Cloud Practitioner (em andamento)</CardContent></Card>
+          <Card className="rounded-2xl bg-slate-900"><CardContent className="p-6"><Award className="text-cyan-400 w-8 h-8 mb-3" />AWS Security Essentials</CardContent></Card>
+          <Card className="rounded-2xl bg-slate-900"><CardContent className="p-6"><Award className="text-cyan-400 w-8 h-8 mb-3" />TryHackMe – Cloud Security</CardContent></Card>
+        </div>
+      </section>
+
+      {/* CONTATO */}
+      <footer className="bg-black py-20">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-semibold mb-8">Contato</h2>
+          <div className="flex justify-center gap-8 text-cyan-400">
+            <Github />
+            <Linkedin />
+            <Mail />
+          </div>
+          <p className="text-slate-500 mt-8">© 2026 Diego • Cloud Security Portfolio</p>
+        </div>
+      </footer>
+
+    </div>
+  );
+}
+
