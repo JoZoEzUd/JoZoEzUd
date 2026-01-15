@@ -38,11 +38,8 @@
 ---
 
 ## 🎓 Certificações  
-<div align="center">
 
-![TryHackMe](Pre Security) 
-
-</div>
+-[TryHackMe](Pre Security) 
 
 ---
 
