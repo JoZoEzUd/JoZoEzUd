@@ -1,6 +1,6 @@
 <h1 align="center">João Batista 🇧🇷</h1>
 <p align="center">
-  💻 Estudante de Ciência da Computação • 🔐 Cibersegurança (Red Team & Blue Team) 
+  💻🛡️ Estudante de Ciência da Computação • 🔐 Cibersegurança (Red Team & Blue Team) 
 </p>
 
 ---
