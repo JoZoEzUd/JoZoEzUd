@@ -43,6 +43,13 @@
 
 ---
 
+## 🎖️ Badges 
+| Plataforma | Badge | 
+|------------|-------|
+| TryHackMe | [![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/ezudgg.png)](https://tryhackme.com/p/ezudgg) |
+
+---
+
 ## 🌏 Contato  
 - 🔗 [LinkedIn: João Batista](www.linkedin.com/in/joão-batista-2206321t)  
 - 💻 Discord: `ezud12`  
