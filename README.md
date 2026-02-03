@@ -47,6 +47,7 @@
 | Plataforma | Badge | 
 |------------|-------|
 | TryHackMe | [![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/ezudgg.png)](https://tryhackme.com/p/ezudgg) |
+| CyberDefender | <img src="https://cyberdefenders-storage.s3.me-central-1.amazonaws.com/profile-badges/BatistaSec.png" width="300" />
 
 ---
 
