@@ -50,6 +50,16 @@
 
 ---
 
+## 📊 Estatísticas
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=BatistaSec&show_icons=true&theme=radical)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=BatistaSec&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=BatistaSec&layout=compact&theme=radical)
+
+
+
+---
+
 ## 🌏 Contato  
 - 🔗 [LinkedIn: João Batista](www.linkedin.com/in/joão-batista-2206321t)  
 - 💻 Discord: `ezud12`  
