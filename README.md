@@ -52,9 +52,9 @@
 
 ## 📊 Estatísticas
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=BatistaSec&show_icons=true&theme=radical)
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=BatistaSec&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=BatistaSec&layout=compact&theme=radical)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=BatistaSec&show_icons=true&theme=tokyonight)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=BatistaSec&theme=tokyonight) 
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=BatistaSec&layout=compact&theme=tokyonight)
 
 
 
