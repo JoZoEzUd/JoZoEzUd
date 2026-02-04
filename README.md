@@ -38,8 +38,11 @@
 ---
 
 ## 🎓 Certificações  
+<div align="center"> 
+  <p></p>[TryHackMe](Pre Security) </p>
+  <p>[Cisco](introdução à cibersegurança )</p>
+</div>
 
--[TryHackMe](Pre Security) 
 
 ---
 
