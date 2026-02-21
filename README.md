@@ -23,7 +23,13 @@
 <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+<img src="https://img.shields.io/badge/Assembly-000000?style=for-the-badge&logo=asm&logoColor=white" />
+<img src="https://img.shields.io/badge/Ghidra-FF0000?style=for-the-badge&logo=ghidra&logoColor=white" />
+<img src="https://img.shields.io/badge/IDA-00599C?style=for-the-badge&logo=ida&logoColor=white" />
+<img src="https://img.shields.io/badge/Radare2-FF6600?style=for-the-badge&logo=radare2&logoColor=white" />
+<img src="https://img.shields.io/badge/x64dbg-008080?style=for-the-badge&logo=windows&logoColor=white" />
+<img src="https://img.shields.io/badge/Malware_Analysis-800000?style=for-the-badge&logo=virustotal&logoColor=white" />
+<img src="https://img.shields.io/badge/Pwn-FF1493?style=for-the-badge&logo=exploit&logoColor=white" />
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
 <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white" />
 <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
