@@ -25,15 +25,6 @@
 
 ---
 
-## 📊 Estatísticas do GitHub
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=BatistaSec&show_icons=true&theme=tokyonight"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=BatistaSec&theme=tokyonight"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=BatistaSec&layout=compact&theme=tokyonight"/>
-</p>
-
----
-
 ## 🌟 Projetos em Destaque
 
 ---
