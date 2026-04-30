@@ -1,87 +1,50 @@
-<h1 align="center">João Batista 🇧🇷</h1>
+# João Batista 🇧🇷  
+💻 Desenvolvedor Backend | ☁️ Cloud Enthusiast  
+
+---
+
+## 🚀 Sobre mim
+🎓 Estudante de Ciência da Computação  
+💻 *Desenvolvedor *Backend & Cloud**  
+
+---
+
+## 🛠️ Tecnologias & Ferramentas
 <p align="center">
-  💻🛡️ Estudante de Ciência da Computação • 🔐 Cibersegurança (Malware Analysis & Reverse Enginnering & PWN) 
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/>
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
 </p>
 
 ---
 
-## 👾 Sobre mim  
-- 💻 Estudante de Ciência da Computação  
-- 🛡️ Focado em Cibersegurança (Red Team & Blue Team)  
-- 🚀 Sempre em busca de novos desafios e aprendizado contínuo  
+## 📊 Estatísticas do GitHub
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=BatistaSec&show_icons=true&theme=tokyonight"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=BatistaSec&theme=tokyonight"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=BatistaSec&layout=compact&theme=tokyonight"/>
+</p>
 
 ---
 
-## 🏆 Skills & Ferramentas  
-<div align="center" style="display: flex; flex-wrap: wrap; gap: 10px;">
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-<img src="https://img.shields.io/badge/C%23-68217A?style=for-the-badge&logo=csharp&logoColor=white" />
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-<img src="https://img.shields.io/badge/Assembly-000000?style=for-the-badge&logo=asm&logoColor=white" />
-<img src="https://img.shields.io/badge/Ghidra-FF0000?style=for-the-badge&logo=ghidra&logoColor=white" />
-<img src="https://img.shields.io/badge/IDA-00599C?style=for-the-badge&logo=ida&logoColor=white" />
-<img src="https://img.shields.io/badge/Radare2-FF6600?style=for-the-badge&logo=radare2&logoColor=white" />
-<img src="https://img.shields.io/badge/x64dbg-008080?style=for-the-badge&logo=windows&logoColor=white" />
-<img src="https://img.shields.io/badge/Malware_Analysis-800000?style=for-the-badge&logo=virustotal&logoColor=white" />
-<img src="https://img.shields.io/badge/Pwn-FF1493?style=for-the-badge&logo=exploit&logoColor=white" />
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-<img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white" />
-<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-</div>
+## 🌟 Projetos em Destaque
 
 ---
 
-## 🏅 Conquistas  
-<div align="center"> 
-</div>
+## 🎨 Estilo Extra
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=BatistaSec&theme=darkhub&margin-w=15&margin-h=15&column=7"/>
+</p>
 
 ---
 
-## 🎓 Certificações  
-<div align="center"> 
-  <p>[TryHackMe](Pre Security) </p>
-  <p>[TryHackMe] (Cyber Security 101) </p>
-  <p>[Cisco](introdução à cibersegurança )</p>
-</div>
-
-
----
-
-## 🎖️ Badges 
-| Plataforma | Badge | 
-|------------|-------|
-| TryHackMe | [![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/ezudgg.png)](https://tryhackme.com/p/ezudgg) |
-| CyberDefender | <img src="https://cyberdefenders-storage.s3.me-central-1.amazonaws.com/profile-badges/BatistaSec.png" width="300" />
-
----
-
-## 📊 Estatísticas
-
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=BatistaSec&theme=tokyonight) 
-
-
-
-
----
-
-## 🌏 Contato  
-- 🔗 [LinkedIn: João Batista](www.linkedin.com/in/joão-batista-2206321t)  
-- 💻 Discord: `ezud12`  
-- 📧 Email: `Joao_Jozo@outlook.com`  
-
----
-
-## 💯 Status do Sistema  
-```bash
-┌──(system㉿github)-[~/logs]
-└─$ tail -f visitors.log
-[2025-08-28 08:00:01] Incoming connection detected...
-[2025-08-28 08:00:02] IP:192.168.133.42 STATUS: ACCESS GRANTED ✅
-[2025-08-28 08:00:03] Visitor count updated...
+## 🌐 Contato
+📎 [LinkedIn](https://www.linkedin.com/in/joão-batista-2206321t)  
+📧 Email: joao_jozo@outlook.com  
