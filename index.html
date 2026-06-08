@@ -9,7 +9,7 @@
   <meta property="og:title" content="João Batista — Software Engineer" />
   <meta property="og:description" content="Software Engineer especializado em Java, Spring Boot e arquiteturas back-end. Buscando primeira oportunidade." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://jo-zo-ez-ud.vercel.app/" />
+  <meta property="og:url" content="https://batistasec.github.io/BatistaSec/" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -54,7 +54,6 @@
       color: var(--text);
       -webkit-font-smoothing: antialiased;
       min-height: 100vh;
-      /* subtle grid */
       background-image:
         linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px);
@@ -63,7 +62,6 @@
 
     ::selection { background: var(--blue); color: #fff; }
 
-    /* ── LAYOUT ── */
     .layout {
       display: grid;
       grid-template-columns: 280px 1fr;
@@ -106,7 +104,6 @@
       line-height: 1.2;
       margin-bottom: 0.4rem;
     }
-
     .sid-name span { color: var(--blue); }
 
     .sid-role {
@@ -135,10 +132,8 @@
       background: var(--green);
       animation: pulse 2s infinite;
     }
-
     @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
 
-    /* NAV */
     .sid-nav { display: flex; flex-direction: column; gap: 2px; margin-bottom: 2rem; }
 
     .sid-nav-label {
@@ -164,26 +159,12 @@
       border-radius: 6px;
       border: 1px solid transparent;
       transition: all 0.18s;
-      position: relative;
     }
     .sid-link i { font-size: 15px; flex-shrink: 0; }
-    .sid-link:hover {
-      color: var(--text);
-      background: var(--bg3);
-      border-color: var(--border);
-    }
-    .sid-link.active {
-      color: var(--blue);
-      background: var(--blue-bg);
-      border-color: rgba(91,141,238,0.2);
-    }
-    .sid-link .lk-num {
-      margin-left: auto;
-      font-size: 9px;
-      color: var(--dim);
-    }
+    .sid-link:hover { color: var(--text); background: var(--bg3); border-color: var(--border); }
+    .sid-link.active { color: var(--blue); background: var(--blue-bg); border-color: rgba(91,141,238,0.2); }
+    .sid-link .lk-num { margin-left: auto; font-size: 9px; color: var(--dim); }
 
-    /* SOCIAL */
     .sid-social {
       margin-top: auto;
       display: flex;
@@ -206,16 +187,11 @@
     .sid-social-link i { font-size: 14px; }
     .sid-social-link:hover { color: var(--blue); background: var(--blue-bg); }
 
-    .sid-divider {
-      height: 1px;
-      background: var(--border);
-      margin: 1rem 0;
-    }
+    .sid-divider { height: 1px; background: var(--border); margin: 1rem 0; }
 
     /* ── MAIN ── */
     main { padding: 3rem 3.5rem; max-width: 860px; }
 
-    /* SECTION */
     .section { margin-bottom: 4rem; }
 
     .sec-head {
@@ -224,26 +200,9 @@
       gap: 10px;
       margin-bottom: 2rem;
     }
-
-    .sec-prefix {
-      font-family: var(--mono);
-      font-size: 11px;
-      color: var(--blue);
-    }
-
-    .sec-title {
-      font-family: var(--mono);
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--text);
-      letter-spacing: 0.04em;
-    }
-
-    .sec-line {
-      flex: 1;
-      height: 1px;
-      background: linear-gradient(to right, var(--border2), transparent);
-    }
+    .sec-prefix { font-family: var(--mono); font-size: 11px; color: var(--blue); }
+    .sec-title { font-family: var(--mono); font-size: 13px; font-weight: 500; color: var(--text); letter-spacing: 0.04em; }
+    .sec-line { flex: 1; height: 1px; background: linear-gradient(to right, var(--border2), transparent); }
 
     /* ── HERO ── */
     .hero-section { padding-top: 1rem; }
@@ -265,7 +224,6 @@
       margin-bottom: 1.5rem;
       color: var(--text);
     }
-
     .hero-title .ht-const { color: var(--purple); }
     .hero-title .ht-name  { color: var(--yellow); font-weight: 500; }
     .hero-title .ht-eq    { color: var(--muted); }
@@ -317,17 +275,9 @@
     .btn-ghost:hover { color: var(--text); border-color: var(--border2); background: var(--bg3); }
 
     /* ── ABOUT ── */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-    }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
 
-    .about-text {
-      font-size: 13.5px;
-      line-height: 1.85;
-      color: var(--muted);
-    }
+    .about-text { font-size: 13.5px; line-height: 1.85; color: var(--muted); }
     .about-text p { margin-bottom: 0.9rem; }
     .about-text p:last-child { margin-bottom: 0; }
     .about-text strong { color: var(--blue); font-weight: 500; }
@@ -367,22 +317,11 @@
       transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
       cursor: default;
     }
-    .stack-card:hover {
-      border-color: var(--blue);
-      transform: translateY(-3px);
-      box-shadow: 0 4px 20px rgba(91,141,238,0.12);
-    }
+    .stack-card:hover { border-color: var(--blue); transform: translateY(-3px); box-shadow: 0 4px 20px rgba(91,141,238,0.12); }
     .stack-card i { font-size: 19px; color: var(--blue); transition: transform 0.2s; }
     .stack-card:hover i { transform: scale(1.15); }
     .stack-name { font-family: var(--mono); font-size: 11px; font-weight: 500; color: var(--text); }
-    .stack-lvl {
-      font-family: var(--mono);
-      font-size: 9px;
-      color: var(--muted);
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-    }
+    .stack-lvl { font-family: var(--mono); font-size: 9px; color: var(--muted); display: inline-flex; align-items: center; gap: 5px; }
     .lvl-dots { display: flex; gap: 3px; }
     .lvl-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--dim); }
     .lvl-dot.on { background: var(--blue); }
@@ -432,6 +371,7 @@
       border-radius: 8px;
       padding: 4px;
       width: fit-content;
+      flex-wrap: wrap;
     }
     .proj-tab {
       font-family: var(--mono);
@@ -518,11 +458,7 @@
     .proj-card:hover .proj-link { color: var(--blue); }
 
     /* ── CONTACT ── */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 
     .contact-card {
       display: flex;
@@ -542,7 +478,6 @@
     .contact-label-sm { font-family: var(--mono); font-size: 9px; color: var(--dim); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 3px; }
     .contact-value-sm { font-family: var(--mono); font-size: 12px; color: var(--text); }
 
-    /* ── LANG TOGGLE ── */
     .lang-btn {
       font-family: var(--mono);
       font-size: 10px;
@@ -561,7 +496,6 @@
     }
     .lang-btn:hover { color: var(--blue); border-color: var(--blue); background: var(--blue-bg); }
 
-    /* ── FOOTER ── */
     .main-footer {
       margin-top: 3rem;
       padding-top: 1.5rem;
@@ -572,7 +506,6 @@
     }
     .footer-copy { font-family: var(--mono); font-size: 11px; color: var(--dim); }
 
-    /* ── ANIMATIONS ── */
     @keyframes fadeIn  { from{opacity:0} to{opacity:1} }
     @keyframes slideUp { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
 
@@ -584,7 +517,6 @@
     .d4{animation-delay:.26s} .d5{animation-delay:.33s} .d6{animation-delay:.4s}
     .d7{animation-delay:.47s} .d8{animation-delay:.54s} .d9{animation-delay:.61s}
 
-    /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       .layout { grid-template-columns: 1fr; }
       .sidebar {
@@ -665,7 +597,6 @@
     <button class="lang-btn ai d7" onclick="toggleLang()" id="lang-btn">
       <i class="ti ti-world"></i> <span id="lang-txt">switch to EN</span>
     </button>
-
   </aside>
 
   <!-- MAIN -->
@@ -692,7 +623,7 @@
       </div>
     </div>
 
-    <!-- SOBRE / ABOUT -->
+    <!-- SOBRE -->
     <div class="section">
       <div class="sec-head au d1">
         <span class="sec-prefix">/*</span>
@@ -748,56 +679,105 @@
         <div class="sec-line"></div>
       </div>
       <div class="stack-grid">
+
+        <!-- Java (sem versão) -->
         <div class="stack-card asc d1">
           <i class="ti ti-coffee"></i>
-          <span class="stack-name">Java 17</span>
+          <span class="stack-name">Java</span>
           <div class="stack-lvl"><div class="lvl-dots"><span class="lvl-dot on"></span><span class="lvl-dot on"></span><span class="lvl-dot on"></span><span class="lvl-dot"></span></div> <span id="lv-java">Avançado</span></div>
         </div>
+
+        <!-- Spring Boot -->
         <div class="stack-card asc d2">
           <i class="ti ti-leaf"></i>
           <span class="stack-name">Spring Boot</span>
           <div class="stack-lvl"><div class="lvl-dots"><span class="lvl-dot on"></span><span class="lvl-dot on"></span><span class="lvl-dot on"></span><span class="lvl-dot"></span></div> <span id="lv-spring">Avançado</span></div>
         </div>
+
+        <!-- Golang (NOVO) -->
+        <div class="stack-card asc d2">
+          <i class="ti ti-brand-golang"></i>
+          <span class="stack-name">Golang</span>
+          <div class="stack-lvl"><div class="lvl-dots"><span class="lvl-dot on"></span><span class="lvl-dot on"></span><span class="lvl-dot"></span><span class="lvl-dot"></span></div> <span id="lv-go">Intermediário</span></div>
+        </div>
+
+        <!-- PostgreSQL -->
         <div class="stack-card asc d3">
           <i class="ti ti-database"></i>
           <span class="stack-name">PostgreSQL</span>
           <div class="stack-lvl"><div class="lvl-dots"><span class="lvl-dot on"></span><span class="lvl-dot on"></span><span class="lvl-dot on"></span><span class="lvl-dot"></span></div> <span id="lv-pg">Avançado</span></div>
         </div>
+
+        <!-- MySQL -->
         <div class="stack-card asc d3">
           <i class="ti ti-database"></i>
           <span class="stack-name">MySQL</span>
           <div class="stack-lvl"><div class="lvl-dots"><span class="lvl-dot on"></span><span class="lvl-dot on"></span><span class="lvl-dot on"></span><span class="lvl-dot"></span></div> <span id="lv-mysql">Avançado</span></div>
         </div>
+
+        <!-- RabbitMQ (NOVO) -->
+        <div class="stack-card asc d4">
+          <i class="ti ti-messages"></i>
+          <span class="stack-name">RabbitMQ</span>
+          <div class="stack-lvl"><div class="lvl-dots"><span class="lvl-dot on"></span><span class="lvl-dot on"></span><span class="lvl-dot"></span><span class="lvl-dot"></span></div> <span id="lv-rabbit">Intermediário</span></div>
+        </div>
+
+        <!-- Swagger UI (NOVO) -->
+        <div class="stack-card asc d4">
+          <i class="ti ti-api"></i>
+          <span class="stack-name">Swagger UI</span>
+          <div class="stack-lvl"><div class="lvl-dots"><span class="lvl-dot on"></span><span class="lvl-dot on"></span><span class="lvl-dot on"></span><span class="lvl-dot"></span></div> <span id="lv-swagger">Avançado</span></div>
+        </div>
+
+        <!-- OWASP (NOVO) -->
+        <div class="stack-card asc d5">
+          <i class="ti ti-shield-check"></i>
+          <span class="stack-name">OWASP</span>
+          <div class="stack-lvl"><div class="lvl-dots"><span class="lvl-dot on"></span><span class="lvl-dot on"></span><span class="lvl-dot"></span><span class="lvl-dot"></span></div> <span id="lv-owasp">Intermediário</span></div>
+        </div>
+
+        <!-- Python -->
         <div class="stack-card asc d4">
           <i class="ti ti-brand-python"></i>
           <span class="stack-name">Python</span>
           <div class="stack-lvl"><div class="lvl-dots"><span class="lvl-dot on"></span><span class="lvl-dot on"></span><span class="lvl-dot"></span><span class="lvl-dot"></span></div> <span id="lv-python">Intermediário</span></div>
         </div>
+
+        <!-- AWS -->
         <div class="stack-card asc d5">
           <i class="ti ti-cloud"></i>
           <span class="stack-name">AWS</span>
           <div class="stack-lvl"><div class="lvl-dots"><span class="lvl-dot on"></span><span class="lvl-dot on"></span><span class="lvl-dot"></span><span class="lvl-dot"></span></div> <span id="lv-aws">Intermediário</span></div>
         </div>
+
+        <!-- Docker -->
         <div class="stack-card asc d6">
           <i class="ti ti-brand-docker"></i>
           <span class="stack-name">Docker</span>
           <div class="stack-lvl"><div class="lvl-dots"><span class="lvl-dot on"></span><span class="lvl-dot on"></span><span class="lvl-dot"></span><span class="lvl-dot"></span></div> <span id="lv-docker">Intermediário</span></div>
         </div>
+
+        <!-- Spring Security -->
         <div class="stack-card asc d7">
           <i class="ti ti-shield-lock"></i>
           <span class="stack-name">Spring Security</span>
           <div class="stack-lvl"><div class="lvl-dots"><span class="lvl-dot on"></span><span class="lvl-dot on"></span><span class="lvl-dot"></span><span class="lvl-dot"></span></div> <span id="lv-sec">Intermediário</span></div>
         </div>
+
+        <!-- Git -->
         <div class="stack-card asc d8">
           <i class="ti ti-git-branch"></i>
           <span class="stack-name">Git & GitHub</span>
           <div class="stack-lvl"><div class="lvl-dots"><span class="lvl-dot on"></span><span class="lvl-dot on"></span><span class="lvl-dot"></span><span class="lvl-dot"></span></div> <span id="lv-git">Intermediário</span></div>
         </div>
+
+        <!-- JUnit -->
         <div class="stack-card asc d9">
           <i class="ti ti-test-pipe"></i>
           <span class="stack-name">JUnit</span>
           <div class="stack-lvl"><div class="lvl-dots"><span class="lvl-dot on"></span><span class="lvl-dot"></span><span class="lvl-dot"></span><span class="lvl-dot"></span></div> <span id="lv-junit">Básico</span></div>
         </div>
+
       </div>
     </div>
 
@@ -815,7 +795,7 @@
           <span class="exp-period">2024 — <span id="e-present">hoje</span></span>
         </div>
         <p class="exp-company" id="e1-co">// Autônomo · Remoto</p>
-        <p class="exp-desc" id="e1-desc">Desenvolvimento de APIs REST com Java 17 e Spring Boot, implementação de autenticação com JWT e Spring Security, integração com MySQL e PostgreSQL via JPA/Hibernate, e testes com JUnit. Foco em boas práticas como Clean Code, tratamento global de exceções e validação de dados com Bean Validation.</p>
+        <p class="exp-desc" id="e1-desc">Desenvolvimento de APIs REST com Java e Spring Boot, implementação de autenticação com JWT e Spring Security, integração com MySQL e PostgreSQL via JPA/Hibernate, mensageria com RabbitMQ, documentação com Swagger UI e testes com JUnit. Foco em boas práticas como Clean Code, OWASP, tratamento global de exceções e validação de dados com Bean Validation.</p>
       </div>
     </div>
 
@@ -831,10 +811,11 @@
       <div class="proj-tabs au d2">
         <button class="proj-tab active" onclick="switchTab('all')" id="tab-all">todos</button>
         <button class="proj-tab" onclick="switchTab('api')" id="tab-api">API REST</button>
-        <button class="proj-tab" onclick="switchTab('Microsserviços')" id="tab-microservices">Microsserviços</button>
+        <button class="proj-tab" onclick="switchTab('microservices')" id="tab-microservices">Microsserviços</button>
         <button class="proj-tab" onclick="switchTab('security')" id="tab-security">segurança</button>
       </div>
 
+      <!-- PAINEL ALL -->
       <div class="proj-panel active" id="panel-all">
         <a class="proj-card" href="https://github.com/BatistaSec/Gerenciamento-de-Usuarios---API" target="_blank" rel="noopener">
           <div class="proj-top">
@@ -844,19 +825,20 @@
           <p class="proj-desc" id="p1-desc">API REST completa para gerenciamento de usuários com CRUD, validação com Bean Validation, tratamento global de exceções e integração com MySQL via Spring Data JPA.</p>
           <div class="proj-footer">
             <div class="proj-techs">
-              <span class="tech-pill">Java 17</span>
+              <span class="tech-pill">Java</span>
               <span class="tech-pill">Spring Boot</span>
               <span class="tech-pill">MySQL</span>
               <span class="tech-pill">JPA/Hibernate</span>
               <span class="tech-pill">Maven</span>
-               <span class="tech-pill">JWT</span>
-                <span class="tech-pill">Swagger UI</span>
+              <span class="tech-pill">JWT</span>
+              <span class="tech-pill">Swagger UI</span>
             </div>
             <span class="proj-link"><i class="ti ti-brand-github"></i> BatistaSec</span>
           </div>
         </a>
       </div>
 
+      <!-- PAINEL API -->
       <div class="proj-panel" id="panel-api">
         <a class="proj-card" href="https://github.com/BatistaSec/Gerenciamento-de-Usuarios---API" target="_blank" rel="noopener">
           <div class="proj-top">
@@ -866,27 +848,48 @@
           <p class="proj-desc">API REST completa para gerenciamento de usuários com CRUD, validação com Bean Validation, tratamento global de exceções e integração com MySQL via Spring Data JPA.</p>
           <div class="proj-footer">
             <div class="proj-techs">
-              <span class="tech-pill">Java 17</span>
+              <span class="tech-pill">Java</span>
               <span class="tech-pill">Spring Boot</span>
               <span class="tech-pill">MySQL</span>
               <span class="tech-pill">JPA/Hibernate</span>
+              <span class="tech-pill">Swagger UI</span>
             </div>
             <span class="proj-link"><i class="ti ti-brand-github"></i> BatistaSec</span>
           </div>
         </a>
       </div>
 
+      <!-- PAINEL MICROSSERVIÇOS (corrigido) -->
+      <div class="proj-panel" id="panel-microservices">
+        <div class="proj-card" style="opacity:0.5; cursor:default;">
+          <div class="proj-top">
+            <span class="proj-name" id="p-micro">em breve · arquitetura de microsserviços</span>
+            <span class="proj-tag">Microsserviços</span>
+          </div>
+          <p class="proj-desc" id="p-micro-desc">Projeto com arquitetura de microsserviços usando Spring Boot, comunicação via RabbitMQ e deploy em containers Docker. Em desenvolvimento.</p>
+          <div class="proj-techs">
+            <span class="tech-pill">Java</span>
+            <span class="tech-pill">Spring Boot</span>
+            <span class="tech-pill">RabbitMQ</span>
+            <span class="tech-pill">Docker</span>
+            <span class="tech-pill">Golang</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAINEL SEGURANÇA -->
       <div class="proj-panel" id="panel-security">
         <div class="proj-card" style="opacity:0.5; cursor:default;">
           <div class="proj-top">
             <span class="proj-name" id="p-coming">em breve · auth com JWT</span>
             <span class="proj-tag" id="p-coming-tag">segurança</span>
           </div>
-          <p class="proj-desc" id="p-coming-desc">Projeto de autenticação com JWT, refresh tokens e controle de acesso baseado em perfis. Em desenvolvimento.</p>
+          <p class="proj-desc" id="p-coming-desc">Projeto de autenticação com JWT, refresh tokens e controle de acesso baseado em perfis, seguindo as diretrizes OWASP. Em desenvolvimento.</p>
           <div class="proj-techs">
             <span class="tech-pill">Spring Security</span>
             <span class="tech-pill">JWT</span>
             <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">OWASP</span>
           </div>
         </div>
       </div>
@@ -922,11 +925,11 @@
             <p class="contact-value-sm">BatistaSec</p>
           </div>
         </a>
-        <a class="contact-card asc d5" href="https://jo-zo-ez-ud.vercel.app/" target="_blank" rel="noopener">
+        <a class="contact-card asc d5" href="https://batistasec.github.io/BatistaSec/" target="_blank" rel="noopener">
           <i class="ti ti-world"></i>
           <div>
             <p class="contact-label-sm" id="cl-site">site</p>
-            <p class="contact-value-sm">jo-zo-ez-ud.vercel.app</p>
+            <p class="contact-value-sm">batistasec.github.io</p>
           </div>
         </a>
       </div>
@@ -948,7 +951,7 @@
 
   const T = {
     PT: {
-      'lang-btn': '', 'lang-txt': 'switch to EN',
+      'lang-txt': 'switch to EN',
       'sid-label': 'software_engineer', 'sid-status-txt': 'Buscando oportunidade',
       'nav-lbl': 'navegação', 'social-lbl': 'links',
       'nl-sobre': 'sobre', 'nl-exp': 'experiência', 'nl-proj': 'projetos', 'nl-contact': 'contato',
@@ -962,18 +965,20 @@
       'about-p3': 'Quando não estou codando, estou estudando design patterns, explorando a documentação do Spring ou contribuindo com projetos no GitHub.',
       'fl-loc': 'localização', 'fl-status': 'status', 'fv-status': 'Buscando 1ª oportunidade',
       'lv-java':'Avançado','lv-spring':'Avançado','lv-pg':'Avançado','lv-mysql':'Avançado',
+      'lv-go':'Intermediário','lv-rabbit':'Intermediário','lv-swagger':'Avançado','lv-owasp':'Intermediário',
       'lv-python':'Intermediário','lv-aws':'Intermediário','lv-docker':'Intermediário','lv-sec':'Intermediário','lv-git':'Intermediário','lv-junit':'Básico',
       'e-present': 'hoje', 'e1-role': 'Desenvolvedor Back-end · Projetos Pessoais', 'e1-co': '// Autônomo · Remoto',
-      'e1-desc': 'Desenvolvimento de APIs REST com Java 17 e Spring Boot, implementação de autenticação com JWT e Spring Security, integração com MySQL e PostgreSQL via JPA/Hibernate, e testes com JUnit.',
-      'tab-all': 'todos', 'tab-api': 'API REST', 'tab-security': 'segurança',
+      'e1-desc': 'Desenvolvimento de APIs REST com Java e Spring Boot, implementação de autenticação com JWT e Spring Security, integração com MySQL e PostgreSQL via JPA/Hibernate, mensageria com RabbitMQ, documentação com Swagger UI e testes com JUnit. Foco em boas práticas como Clean Code, OWASP, tratamento global de exceções e validação com Bean Validation.',
+      'tab-all': 'todos', 'tab-api': 'API REST', 'tab-microservices': 'Microsserviços', 'tab-security': 'segurança',
       'p1-name': 'Gerenciamento de Usuários — API',
       'p1-desc': 'API REST completa para gerenciamento de usuários com CRUD, validação com Bean Validation, tratamento global de exceções e integração com MySQL via Spring Data JPA.',
+      'p-micro': 'em breve · arquitetura de microsserviços', 'p-micro-desc': 'Projeto com arquitetura de microsserviços usando Spring Boot, comunicação via RabbitMQ e deploy em containers Docker. Em desenvolvimento.',
       'p-coming': 'em breve · auth com JWT', 'p-coming-tag': 'segurança',
-      'p-coming-desc': 'Projeto de autenticação com JWT, refresh tokens e controle de acesso baseado em perfis. Em desenvolvimento.',
+      'p-coming-desc': 'Projeto de autenticação com JWT, refresh tokens e controle de acesso baseado em perfis, seguindo as diretrizes OWASP. Em desenvolvimento.',
       'cl-site': 'site', 'f-avail': 'Aberto a oportunidades',
     },
     EN: {
-      'lang-btn': '', 'lang-txt': 'switch to PT',
+      'lang-txt': 'switch to PT',
       'sid-label': 'software_engineer', 'sid-status-txt': 'Open to opportunities',
       'nav-lbl': 'navigation', 'social-lbl': 'links',
       'nl-sobre': 'about', 'nl-exp': 'experience', 'nl-proj': 'projects', 'nl-contact': 'contact',
@@ -982,19 +987,21 @@
       'hero-desc': 'Passionate about building solid, well-structured back-end systems. I master Java, Spring Boot and architecture best practices — ready to contribute in my first professional challenge.',
       'hero-cta': 'get in touch', 'hero-gh': 'view github',
       's-sobre': 'about_me', 's-stack': 'tech_stack', 's-exp': 'experience', 's-proj': 'projects', 's-contact': 'contact',
-      'about-p1': 'I\'m João Batista, a back-end developer based in São Paulo. I\'ve been focused on building robust, secure, and well-documented REST APIs using the Java ecosystem.',
-      'about-p2': 'I enjoy writing clean code, thinking about architecture, and understanding the why behind technical decisions. I\'m looking for my first opportunity to grow alongside a team.',
-      'about-p3': 'When I\'m not coding, I\'m studying design patterns, exploring Spring documentation, or contributing to projects on GitHub.',
+      'about-p1': "I'm João Batista, a back-end developer based in São Paulo. I've been focused on building robust, secure, and well-documented REST APIs using the Java ecosystem.",
+      'about-p2': "I enjoy writing clean code, thinking about architecture, and understanding the why behind technical decisions. I'm looking for my first opportunity to grow alongside a team.",
+      'about-p3': "When I'm not coding, I'm studying design patterns, exploring Spring documentation, or contributing to projects on GitHub.",
       'fl-loc': 'location', 'fl-status': 'status', 'fv-status': 'Looking for 1st opportunity',
       'lv-java':'Advanced','lv-spring':'Advanced','lv-pg':'Advanced','lv-mysql':'Advanced',
+      'lv-go':'Intermediate','lv-rabbit':'Intermediate','lv-swagger':'Advanced','lv-owasp':'Intermediate',
       'lv-python':'Intermediate','lv-aws':'Intermediate','lv-docker':'Intermediate','lv-sec':'Intermediate','lv-git':'Intermediate','lv-junit':'Basic',
       'e-present': 'present', 'e1-role': 'Back-end Developer · Personal Projects', 'e1-co': '// Freelance · Remote',
-      'e1-desc': 'Development of REST APIs with Java 17 and Spring Boot, JWT authentication with Spring Security, MySQL and PostgreSQL integration via JPA/Hibernate, and unit testing with JUnit.',
-      'tab-all': 'all', 'tab-api': 'REST API', 'tab-security': 'security','tab-microservices':'Microservices',
+      'e1-desc': 'Development of REST APIs with Java and Spring Boot, JWT authentication with Spring Security, MySQL and PostgreSQL integration via JPA/Hibernate, messaging with RabbitMQ, documentation with Swagger UI, and unit testing with JUnit. Focus on Clean Code, OWASP guidelines, global exception handling, and Bean Validation.',
+      'tab-all': 'all', 'tab-api': 'REST API', 'tab-microservices': 'Microservices', 'tab-security': 'security',
       'p1-name': 'User Management API',
-      'p1-desc': 'Full REST API for user management with CRUD operations, field validation with Bean Validation, global exception handling, and MySQL integration via Spring Data JPA.',
+      'p1-desc': 'Full REST API for user management with CRUD operations, Bean Validation, global exception handling, and MySQL integration via Spring Data JPA.',
+      'p-micro': 'coming soon · microservices architecture', 'p-micro-desc': 'Microservices architecture project using Spring Boot, RabbitMQ for messaging and Docker containers for deployment. Currently in development.',
       'p-coming': 'coming soon · JWT Auth', 'p-coming-tag': 'security',
-      'p-coming-desc': 'Authentication project with JWT, refresh tokens, and role-based access control. Currently in development.',
+      'p-coming-desc': 'Authentication project with JWT, refresh tokens, and role-based access control following OWASP guidelines. Currently in development.',
       'cl-site': 'website', 'f-avail': 'Open to opportunities',
     }
   };
@@ -1004,7 +1011,6 @@
     document.documentElement.lang = isEN ? 'en' : 'pt-BR';
     const t = T[isEN ? 'EN' : 'PT'];
     for (const [id, val] of Object.entries(t)) {
-      if (id === 'lang-btn') continue;
       const el = document.getElementById(id);
       if (el) el.textContent = val;
     }
@@ -1022,7 +1028,6 @@
     el.classList.add('active');
   }
 
-  // Scroll spy
   const sections = ['sobre','stack','exp','projects','contact'];
   const links = {};
   sections.forEach(id => { links[id] = document.querySelector(`.sid-link[href="#${id}"]`); });
@@ -1041,7 +1046,6 @@
     if (el) observer.observe(el);
   });
 
-  // Scroll animation
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {
