@@ -31,6 +31,10 @@
 ### 🔐 [Gerenciamento de Usuários - API](https://github.com/BatistaSec/Gerenciamento-de-Usuarios---API)
 API REST desenvolvida para gerenciamento de usuários, com foco em **segurança**, **boas práticas** e **autenticação robusta**.
 
+### 🔄 [Order Messaging System](https://github.com/BatistaSec/Order-messaging-system)
+
+Sistema distribuído baseado em microserviços com comunicação assíncrona via RabbitMQ, autenticação JWT e arquitetura orientada a eventos. Simula um fluxo real de processamento de pedidos entre serviços independentes.
+
 <p align="center">
 </p>
 
