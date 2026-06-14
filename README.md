@@ -32,7 +32,7 @@
 ## 🌟 Projetos em Destaque
 
 ### 🔐 [Gerenciamento de Usuários - API](https://github.com/BatistaSec/Gerenciamento-de-Usuarios---API)
-API REST desenvolvida para gerenciamento de usuários, com foco em **segurança**, **boas práticas** e **autenticação robusta**.
+API REST desenvolvida para gerenciamento de usuários, com foco em **segurança**, **boas práticas**,**autenticação robusta** e **Docker**.
 
 ### 🔄 [Order Messaging System](https://github.com/BatistaSec/Order-messaging-system)
 
