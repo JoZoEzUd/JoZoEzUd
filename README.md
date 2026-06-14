@@ -44,9 +44,15 @@ Sistema distribuído baseado em microserviços com comunicação assíncrona via
 ---
 
 ## 🎨 Estilo Extra
+
+
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=BatistaSec&theme=darkhub&margin-w=15&margin-h=15&column=7"/>
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="400"/>
 </p>
+
+
+
+
 
 ---
 
