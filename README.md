@@ -5,7 +5,7 @@
 
 ## 🚀 Sobre mim
 🎓 Estudante de Ciência da Computação  
-💻 *Desenvolvedor *FullStack& Cloud**  
+💻 *Desenvolvedor *FullStack & Cloud**  
 
 ---
 
