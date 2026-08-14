@@ -1,11 +1,11 @@
 # João Batista 🇧🇷  
-💻 Desenvolvedor Backend | ☁️ Cloud Enthusiast | 🛡 AppSec
+💻 Desenvolvedor FullStack | ☁️ Cloud Enthusiast | 🛡 AppSec
 
 ---
 
 ## 🚀 Sobre mim
 🎓 Estudante de Ciência da Computação  
-💻 *Desenvolvedor *Backend & Cloud**  
+💻 *Desenvolvedor *FullStack& Cloud**  
 
 ---
 
