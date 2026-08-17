@@ -40,13 +40,6 @@ Sistema distribuído baseado em microserviços, comunicação assíncrona via Ra
 
 ---
 
-## 🎨 Estilo Extra
-<p align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="400"/>
-</p>
-
----
-
 ## 🌐 Contato
 📎 [LinkedIn](https://www.linkedin.com/in/joão-batista-2206321t)  
 📧 Email: joao_jozo@outlook.com  
